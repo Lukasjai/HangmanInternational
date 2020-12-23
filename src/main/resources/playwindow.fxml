@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="background" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f7f439;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.playwindow">
+   <children>
+      <Label layoutX="278.0" layoutY="30.0" prefHeight="76.0" prefWidth="244.0" text="Hangman">
+         <font>
+            <Font name="Jokerman" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="131.0" text="Player:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="29.0" layoutY="416.0" prefHeight="54.0" prefWidth="755.0" spacing="10.0">
+         <children>
+            <Button fx:id="buttonA" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonA" prefHeight="40.0" prefWidth="40.0" text="A" />
+            <Button fx:id="buttonB" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonB" prefHeight="40.0" prefWidth="40.0" text="B" />
+            <Button fx:id="buttonC" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="C" />
+            <Button fx:id="buttonD" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="D" />
+            <Button fx:id="buttonE" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="E" />
+            <Button fx:id="buttonF" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="F" />
+            <Button fx:id="buttonG" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="G" />
+            <Button fx:id="buttonH" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="H" />
+            <Button fx:id="buttonI" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="I" />
+            <Button fx:id="buttonJ" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="J" />
+            <Button fx:id="buttonK" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="K" />
+            <Button fx:id="buttonL" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="L" />
+            <Button fx:id="buttonM" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="M" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="29.0" layoutY="470.0" prefHeight="54.0" prefWidth="755.0" spacing="10.0">
+         <children>
+            <Button fx:id="buttonN" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="N" />
+            <Button fx:id="buttonO" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="O" />
+            <Button fx:id="buttonP" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="P" />
+            <Button fx:id="buttonQ" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="Q" />
+            <Button fx:id="buttonR" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="R" />
+            <Button fx:id="buttonS" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="S" />
+            <Button fx:id="buttonT" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="T" />
+            <Button fx:id="buttonU" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="U" />
+            <Button fx:id="buttonV" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="V" />
+            <Button fx:id="buttonW" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="W" />
+            <Button fx:id="buttonX" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="X" />
+            <Button fx:id="buttonY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="Y" />
+            <Button fx:id="buttonZ" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="Z" />
+         </children>
+      </HBox>
+      <TextField fx:id="player_output" disable="true" layoutX="179.0" layoutY="136.0" promptText="Player" />
+      <Label layoutX="51.0" layoutY="196.0" text="Remaining lifes:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lifes" disable="true" layoutX="228.0" layoutY="201.0" promptText="Player" />
+      <TextField fx:id="underlines" disable="true" layoutX="228.0" layoutY="300.0" promptText=" _ _ _ _ _" />
+      <TextField fx:id="letters" disable="true" layoutX="228.0" layoutY="287.0" promptText="Player" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="244.0" layoutX="533.0" layoutY="118.0" stroke="BLACK" strokeType="INSIDE" width="23.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="26.0" layoutX="511.0" layoutY="349.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="26.0" layoutX="498.0" layoutY="105.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Line fx:id="hangman1" endX="-43.0" endY="-9.000015258789062" layoutX="672.0" layoutY="172.0" startX="-43.5999755859375" startY="-41.00001525878906" strokeWidth="3.0" />
+      <Circle fx:id="hangman2" fill="DODGERBLUE" layoutX="629.0" layoutY="180.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line fx:id="hangman3" endX="2.4000244140625" endY="63.20001220703125" layoutX="628.0" layoutY="196.0" startX="1.0" startY="0.9999847412109375" strokeWidth="3.0" />
+      <Line fx:id="hangman5" endX="20.2786865234375" endY="12.121292114257812" layoutX="608.0" layoutY="214.0" startX="-17.5999755859375" startY="-6.8000030517578125" strokeWidth="3.0" />
+      <Line fx:id="hangman4" endX="32.0" endY="-12.000015258789062" layoutX="632.0" layoutY="224.0" startX="-1.5999755859375" startY="-1.52587890625E-5" strokeWidth="3.0" />
+      <Line fx:id="hangman7" endX="-1.0999755859375" endY="-0.29998779296875" layoutX="632.0" layoutY="260.0" startX="-33.5999755859375" startY="32.0" strokeWidth="3.0" />
+      <Line fx:id="hangman6" endX="31.5999755859375" endY="32.800018310546875" layoutX="630.0" layoutY="260.0" startX="0.4000244140625" strokeWidth="3.0" />
+      <Label fx:id="LabelTry" layoutX="336.0" layoutY="367.0" text="Label" />
+   </children>
+</AnchorPane>
