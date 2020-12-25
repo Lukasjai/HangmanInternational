@@ -1,5 +1,6 @@
 package at.ac.fhcampuswien;
 
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -12,10 +13,12 @@ import java.util.ResourceBundle;
 
 public class Playwindow implements Initializable {
 
+    @FXML
     public TextField player_output;
     public TextField lifes;
     public TextField underlines;
     public TextField letters;
+
 
     public Line hangman1;
     public Circle hangman2;
@@ -61,6 +64,10 @@ public class Playwindow implements Initializable {
     }
     public void HideButtonB(){
         buttonB.setVisible(false);
+    }
+
+    public void showInformation(String playerName) {
+        player_output.setText(playerName);
     }
 }
 

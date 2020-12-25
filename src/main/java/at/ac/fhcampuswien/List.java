@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class List {
 
-   public static java.util.List<String> EasyMode= new ArrayList<String>();
-   public static java.util.List<String> ChallengingMode= new ArrayList<String>();
+    public static java.util.List<String> EasyMode= new ArrayList<String>();
+    public static java.util.List<String> ChallengingMode= new ArrayList<String>();
 
     public static String SelectEasyMode() {
         EasyMode.add("twenty");

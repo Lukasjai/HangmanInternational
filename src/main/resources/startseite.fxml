@@ -37,7 +37,7 @@
                   <Font size="28.0" />
                </font>
             </Label>
-            <TextField fx:id="player" layoutX="304.0" layoutY="323.0" prefHeight="28.0" prefWidth="172.0" />
+            <TextField fx:id="player_input" layoutX="304.0" layoutY="323.0" prefHeight="28.0" prefWidth="172.0" />
             <Button fx:id="startButton" layoutX="330.0" layoutY="410.0" mnemonicParsing="false" onAction="#OpenGame" text="START">
                <font>
                   <Font name="Jokerman" size="18.0" />

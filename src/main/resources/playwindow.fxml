@@ -56,7 +56,7 @@
             <Button fx:id="buttonZ" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="Z" />
          </children>
       </HBox>
-      <TextField fx:id="player_output" disable="true" layoutX="179.0" layoutY="136.0" promptText="Player" />
+      <TextField fx:id="player_output" layoutX="187.0" layoutY="136.0" style="-fx-background-color: #f7f439;" text="Player" />
       <Label layoutX="51.0" layoutY="196.0" text="Remaining lifes:">
          <font>
             <Font size="24.0" />
@@ -64,7 +64,7 @@
       </Label>
       <TextField fx:id="lifes" disable="true" layoutX="228.0" layoutY="201.0" promptText="Player" />
       <TextField fx:id="underlines" disable="true" layoutX="228.0" layoutY="300.0" promptText=" _ _ _ _ _" />
-      <TextField fx:id="letters" disable="true" layoutX="228.0" layoutY="287.0" promptText="Player" />
+      <TextField fx:id="letters" disable="true" layoutX="228.0" layoutY="287.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="244.0" layoutX="533.0" layoutY="118.0" stroke="BLACK" strokeType="INSIDE" width="23.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="26.0" layoutX="511.0" layoutY="349.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="26.0" layoutX="498.0" layoutY="105.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />

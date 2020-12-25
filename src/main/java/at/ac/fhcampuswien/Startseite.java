@@ -19,8 +19,8 @@ import java.util.ResourceBundle;
 
 public class Startseite implements Initializable {
 
-
-    public TextField player;
+    @FXML
+    public TextField player_input;
     public Button startButton;
     public ComboBox mode;
 
@@ -37,6 +37,8 @@ public class Startseite implements Initializable {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/playwindow.fxml"));
             Parent root1 = fxmlLoader.load();
+            Playwindow playWindowOutput = fxmlLoader.getController();
+            playWindowOutput.showInformation(player_input.getText());
             Stage stage = new Stage();
             stage.setTitle("Hangman");
             stage.setScene(new Scene(root1));
@@ -45,13 +47,13 @@ public class Startseite implements Initializable {
         } catch (Exception e) {
             System.out.println("Cant load Game");
         }
+
     }
 
     public void SelectMode() {
         at.ac.fhcampuswien.List.SelectEasyMode();
         at.ac.fhcampuswien.List.SelectModeChallenging();
     }
-
 
 
 
