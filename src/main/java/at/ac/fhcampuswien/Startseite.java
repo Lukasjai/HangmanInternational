@@ -2,6 +2,7 @@ package at.ac.fhcampuswien;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
@@ -22,14 +23,14 @@ public class Startseite implements Initializable {
     public TextField player;
     public Button startButton;
     public ComboBox mode;
-    List<String> EasyMode= new ArrayList<String>();
-    List<String> ChallengingMode= new ArrayList<String>();
-
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        ObservableList<String> list = FXCollections.observableArrayList("Easy", "Challenging");
-        mode.setItems(list);
+        mode.getItems().addAll(
+                "Easy",
+                "Challenging"
+        );
+
     }
 
     public void OpenGame() {
@@ -50,6 +51,8 @@ public class Startseite implements Initializable {
         at.ac.fhcampuswien.List.SelectEasyMode();
         at.ac.fhcampuswien.List.SelectModeChallenging();
     }
+
+
 
 
 

@@ -7,7 +7,7 @@ public class List {
    public static java.util.List<String> EasyMode= new ArrayList<String>();
    public static java.util.List<String> ChallengingMode= new ArrayList<String>();
 
-    public static void SelectEasyMode() {
+    public static String SelectEasyMode() {
         EasyMode.add("twenty");
         EasyMode.add("orange");
         EasyMode.add("market");
@@ -20,6 +20,7 @@ public class List {
         EasyMode.add("silver");
         EasyMode.add("parent");
         EasyMode.add("period");
+        return null;
     }
     public static void SelectModeChallenging(){
         ChallengingMode.add("strawberry");

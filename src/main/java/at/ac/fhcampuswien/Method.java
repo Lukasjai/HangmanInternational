@@ -6,6 +6,8 @@ public class Method {
         r=(int) (Math.random()*10);
         return r;
     }
+
+
 }
 
 
