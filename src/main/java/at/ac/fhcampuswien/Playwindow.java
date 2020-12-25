@@ -17,7 +17,7 @@ public class Playwindow implements Initializable {
     public TextField player_output;
     public TextField lifes;
 
-
+@FXML
     public TextField underlines;
     public TextField letters;
 
@@ -57,7 +57,6 @@ public class Playwindow implements Initializable {
     public Button buttonY;
     public Button buttonZ;
 
-    public Label LabelTry=new Label();
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
     }
@@ -72,9 +71,5 @@ public class Playwindow implements Initializable {
         player_output.setText(playerName);
     }
 
-   /* public void showUnderlinesEasy(String underlines){
-        underlines.setText(underlines);
-
-    }*/
 }
 

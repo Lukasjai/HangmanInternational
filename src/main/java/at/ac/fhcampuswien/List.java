@@ -46,7 +46,7 @@ public class List {
         return wort;
     }
 
-    public static String ChallengingRandomWords() { //12 Buchstaben
+    public static String ChallengingRandomWords() { //10 Buchstaben
         List.SelectModeChallenging();
         Method.getRandom();
         String wort = List.ChallengingMode.get(Method.r);

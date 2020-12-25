@@ -63,8 +63,14 @@
          </font>
       </Label>
       <TextField fx:id="lifes" disable="true" layoutX="228.0" layoutY="201.0" promptText="Player" />
-      <TextField fx:id="underlines" disable="true" layoutX="228.0" layoutY="300.0" promptText=" _ _ _ _ _" />
-      <TextField fx:id="letters" disable="true" layoutX="228.0" layoutY="287.0" />
+      <TextField fx:id="underlines" layoutX="69.0" layoutY="298.0" prefHeight="100.0" prefWidth="500.0" promptText="_" style="-fx-background-color: #f7f439;">
+         <font>
+            <Font size="48.0" />
+         </font></TextField>
+      <TextField fx:id="letters" disable="true" layoutX="69.0" layoutY="249.0" prefHeight="100.0" prefWidth="500.0" text="T E S T">
+         <font>
+            <Font size="48.0" />
+         </font></TextField>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="244.0" layoutX="533.0" layoutY="118.0" stroke="BLACK" strokeType="INSIDE" width="23.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="26.0" layoutX="511.0" layoutY="349.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="26.0" layoutX="498.0" layoutY="105.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
@@ -75,6 +81,5 @@
       <Line fx:id="hangman4" endX="32.0" endY="-12.000015258789062" layoutX="632.0" layoutY="224.0" startX="-1.5999755859375" startY="-1.52587890625E-5" strokeWidth="3.0" />
       <Line fx:id="hangman7" endX="-1.0999755859375" endY="-0.29998779296875" layoutX="632.0" layoutY="260.0" startX="-33.5999755859375" startY="32.0" strokeWidth="3.0" />
       <Line fx:id="hangman6" endX="31.5999755859375" endY="32.800018310546875" layoutX="630.0" layoutY="260.0" startX="0.4000244140625" strokeWidth="3.0" />
-      <Label fx:id="LabelTry" layoutX="336.0" layoutY="367.0" text="Label" />
    </children>
 </AnchorPane>

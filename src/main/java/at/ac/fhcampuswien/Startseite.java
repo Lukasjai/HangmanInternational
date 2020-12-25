@@ -12,6 +12,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -39,8 +40,11 @@ public class Startseite implements Initializable {
             Parent root1 = fxmlLoader.load();
             Playwindow playerNameOutput = fxmlLoader.getController();
             playerNameOutput.showInformation(player_input.getText()); //TODO playerinput darf nicht empty sein, falls empty ->popup
-            Playwindow mode = fxmlLoader.getController();
-            //mode.showUnderlinesEasy();
+            if (mode.getValue().equals("Easy")) {
+                playerNameOutput.underlines.setText("_ _ _ _ _ _");
+            } else if (mode.getValue().equals("Challenging")) {
+                playerNameOutput.underlines.setText("_ _ _ _ _ _ _ _ _ _ _ _");
+            }
             Stage stage = new Stage();
             stage.setTitle("Hangman");
             stage.setScene(new Scene(root1));
@@ -51,17 +55,6 @@ public class Startseite implements Initializable {
         }
 
     }
-
-    /*public void SelectMode() {
-        if (mode.equals("Easy")){
-            Playwindow playWindowOutput =
-        }
-        at.ac.fhcampuswien.List.SelectEasyMode();
-        at.ac.fhcampuswien.List.SelectModeChallenging();
-    }*/
-
-
-
 
 }
 
