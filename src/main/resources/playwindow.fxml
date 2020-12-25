@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="background" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f7f439;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.playwindow">
+<AnchorPane fx:id="background" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f7f439;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.Playwindow">
    <children>
       <Label layoutX="278.0" layoutY="30.0" prefHeight="76.0" prefWidth="244.0" text="Hangman">
          <font>
