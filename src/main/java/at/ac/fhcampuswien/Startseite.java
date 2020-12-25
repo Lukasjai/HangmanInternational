@@ -12,6 +12,8 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class Startseite implements Initializable {
@@ -20,6 +22,8 @@ public class Startseite implements Initializable {
     public TextField player;
     public Button startButton;
     public ComboBox mode;
+    List<String> EasyMode= new ArrayList<String>();
+    List<String> ChallengingMode= new ArrayList<String>();
 
 
     @Override
@@ -43,7 +47,34 @@ public class Startseite implements Initializable {
     }
 
     public void SelectMode() {
+        EasyMode.add("twenty");
+        EasyMode.add("orange");
+        EasyMode.add("market");
+        EasyMode.add("coffee");
+        EasyMode.add("nature");
+        EasyMode.add("people");
+        EasyMode.add("mirror");
+        EasyMode.add("family");
+        EasyMode.add("office");
+        EasyMode.add("silver");
+        EasyMode.add("parent");
+        EasyMode.add("period");
     }
+    public void SelectModeChallenging(){
+        ChallengingMode.add("strawberry");
+        ChallengingMode.add("basketball");
+        ChallengingMode.add("perfection");
+        ChallengingMode.add("technology");
+        ChallengingMode.add("watermelon");
+        ChallengingMode.add("government");
+        ChallengingMode.add("friendship");
+        ChallengingMode.add("university");
+        ChallengingMode.add("helicopter");
+        ChallengingMode.add("generation");
+        ChallengingMode.add("apocalypse");
+        ChallengingMode.add("restaurant");
+    }
+
 
 
 
