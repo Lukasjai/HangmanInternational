@@ -10,7 +10,7 @@ import javafx.scene.shape.Line;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class playwindow implements Initializable {
+public class Playwindow implements Initializable {
 
     public TextField player_output;
     public TextField lifes;

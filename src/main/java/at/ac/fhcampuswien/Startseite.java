@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Controller implements Initializable {
+public class Startseite implements Initializable {
 
 
     public TextField player;
@@ -44,6 +44,8 @@ public class Controller implements Initializable {
 
     public void SelectMode() {
     }
+
+
 
 }
 
