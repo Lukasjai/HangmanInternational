@@ -26,34 +26,34 @@
          <children>
             <Button fx:id="buttonA" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonA" prefHeight="40.0" prefWidth="40.0" text="A" />
             <Button fx:id="buttonB" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonB" prefHeight="40.0" prefWidth="40.0" text="B" />
-            <Button fx:id="buttonC" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="C" />
-            <Button fx:id="buttonD" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="D" />
+            <Button fx:id="buttonC" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonC" prefHeight="40.0" prefWidth="40.0" text="C" />
+            <Button fx:id="buttonD" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonD" prefHeight="40.0" prefWidth="40.0" text="D" />
             <Button fx:id="buttonE" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonE" prefHeight="40.0" prefWidth="40.0" text="E" />
-            <Button fx:id="buttonF" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="F" />
-            <Button fx:id="buttonG" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="G" />
-            <Button fx:id="buttonH" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="H" />
-            <Button fx:id="buttonI" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="I" />
-            <Button fx:id="buttonJ" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="J" />
-            <Button fx:id="buttonK" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="K" />
-            <Button fx:id="buttonL" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="L" />
-            <Button fx:id="buttonM" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="M" />
+            <Button fx:id="buttonF" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonF" prefHeight="40.0" prefWidth="40.0" text="F" />
+            <Button fx:id="buttonG" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonG" prefHeight="40.0" prefWidth="40.0" text="G" />
+            <Button fx:id="buttonH" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonH" prefHeight="40.0" prefWidth="40.0" text="H" />
+            <Button fx:id="buttonI" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonI" prefHeight="40.0" prefWidth="40.0" text="I" />
+            <Button fx:id="buttonJ" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonJ" prefHeight="40.0" prefWidth="40.0" text="J" />
+            <Button fx:id="buttonK" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonK" prefHeight="40.0" prefWidth="40.0" text="K" />
+            <Button fx:id="buttonL" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonL" prefHeight="40.0" prefWidth="40.0" text="L" />
+            <Button fx:id="buttonM" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonM" prefHeight="40.0" prefWidth="40.0" text="M" />
          </children>
       </HBox>
       <HBox alignment="CENTER" layoutX="29.0" layoutY="470.0" prefHeight="54.0" prefWidth="755.0" spacing="10.0">
          <children>
-            <Button fx:id="buttonN" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="N" />
-            <Button fx:id="buttonO" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="O" />
-            <Button fx:id="buttonP" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="P" />
-            <Button fx:id="buttonQ" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="Q" />
-            <Button fx:id="buttonR" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="R" />
-            <Button fx:id="buttonS" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="S" />
-            <Button fx:id="buttonT" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="T" />
-            <Button fx:id="buttonU" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="U" />
-            <Button fx:id="buttonV" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="V" />
-            <Button fx:id="buttonW" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="W" />
-            <Button fx:id="buttonX" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="X" />
-            <Button fx:id="buttonY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="Y" />
-            <Button fx:id="buttonZ" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="Z" />
+            <Button fx:id="buttonN" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonN" prefHeight="40.0" prefWidth="40.0" text="N" />
+            <Button fx:id="buttonO" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonO" prefHeight="40.0" prefWidth="40.0" text="O" />
+            <Button fx:id="buttonP" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonP" prefHeight="40.0" prefWidth="40.0" text="P" />
+            <Button fx:id="buttonQ" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonQ" prefHeight="40.0" prefWidth="40.0" text="Q" />
+            <Button fx:id="buttonR" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonR" prefHeight="40.0" prefWidth="40.0" text="R" />
+            <Button fx:id="buttonS" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonS" prefHeight="40.0" prefWidth="40.0" text="S" />
+            <Button fx:id="buttonT" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonT" prefHeight="40.0" prefWidth="40.0" text="T" />
+            <Button fx:id="buttonU" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonU" prefHeight="40.0" prefWidth="40.0" text="U" />
+            <Button fx:id="buttonV" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonV" prefHeight="40.0" prefWidth="40.0" text="V" />
+            <Button fx:id="buttonW" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonW" prefHeight="40.0" prefWidth="40.0" text="W" />
+            <Button fx:id="buttonX" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonX" prefHeight="40.0" prefWidth="40.0" text="X" />
+            <Button fx:id="buttonY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonY" prefHeight="40.0" prefWidth="40.0" text="Y" />
+            <Button fx:id="buttonZ" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonZ" prefHeight="40.0" prefWidth="40.0" text="Z" />
          </children>
       </HBox>
       <TextField fx:id="player_output" layoutX="187.0" layoutY="136.0" style="-fx-background-color: #f7f439;" text="Player" />

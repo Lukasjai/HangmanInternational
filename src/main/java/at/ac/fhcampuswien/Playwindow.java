@@ -64,25 +64,6 @@ public class Playwindow extends Startseite implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
     }
-
-    public void HideButtonA() {
-
-        buttonA.setVisible(false);
-    }
-
-    public void HideButtonB() {
-        buttonB.setVisible(false);
-    }
-
-    public void showInformation(String playerName) {
-        player_output.setText(playerName);
-    }
-
-    public void HideButtonE() {
-        ReplaceButtons(buttonE);
-        buttonE.setVisible(false);
-    }
-
     public void ReplaceButtons(Button button){
         for (int i = 0; i < easyWord.length(); i++) {
             actual[i] = ((easyWord.charAt(i)) + " ");
@@ -101,6 +82,119 @@ public class Playwindow extends Startseite implements Initializable {
 
         }
     }
+
+    public void showInformation(String playerName) {
+        player_output.setText(playerName);
+    }
+
+    public void HideButtonA() {
+        ReplaceButtons(buttonA);
+        buttonA.setVisible(false);
+    }
+
+    public void HideButtonB() {
+        ReplaceButtons(buttonB);
+        buttonB.setVisible(false);
+    }
+
+    public void HideButtonC() {
+        ReplaceButtons(buttonC);
+        buttonC.setVisible(false);
+    }
+    public void HideButtonD() {
+        ReplaceButtons(buttonD);
+        buttonD.setVisible(false);
+    }
+
+    public void HideButtonE() {
+        ReplaceButtons(buttonE);
+        buttonE.setVisible(false);
+    }
+    public void HideButtonF() {
+        ReplaceButtons(buttonF);
+        buttonF.setVisible(false);
+    }
+    public void HideButtonG() {
+        ReplaceButtons(buttonG);
+        buttonG.setVisible(false);
+    }
+    public void HideButtonH() {
+        ReplaceButtons(buttonH);
+        buttonH.setVisible(false);
+    }
+    public void HideButtonI() {
+        ReplaceButtons(buttonI);
+        buttonI.setVisible(false);
+    }
+    public void HideButtonJ() {
+        ReplaceButtons(buttonJ);
+        buttonJ.setVisible(false);
+    }
+    public void HideButtonK() {
+        ReplaceButtons(buttonK);
+        buttonK.setVisible(false);
+    }
+    public void HideButtonL() {
+        ReplaceButtons(buttonL);
+        buttonL.setVisible(false);
+    }
+    public void HideButtonM() {
+        ReplaceButtons(buttonM);
+        buttonM.setVisible(false);
+    }
+    public void HideButtonN() {
+        ReplaceButtons(buttonN);
+        buttonN.setVisible(false);
+    }
+    public void HideButtonO() {
+        ReplaceButtons(buttonO);
+        buttonO.setVisible(false);
+    }
+    public void HideButtonP() {
+        ReplaceButtons(buttonP);
+        buttonP.setVisible(false);
+    }
+    public void HideButtonQ() {
+        ReplaceButtons(buttonQ);
+        buttonQ.setVisible(false);
+    }
+    public void HideButtonR() {
+        ReplaceButtons(buttonR);
+        buttonR.setVisible(false);
+    }
+    public void HideButtonS() {
+        ReplaceButtons(buttonS);
+        buttonS.setVisible(false);
+    }
+    public void HideButtonT() {
+        ReplaceButtons(buttonT);
+        buttonT.setVisible(false);
+    }
+    public void HideButtonU() {
+        ReplaceButtons(buttonU);
+        buttonU.setVisible(false);
+    }
+    public void HideButtonV() {
+        ReplaceButtons(buttonV);
+        buttonV.setVisible(false);
+    }
+    public void HideButtonW() {
+        ReplaceButtons(buttonW);
+        buttonW.setVisible(false);
+    }
+    public void HideButtonX() {
+        ReplaceButtons(buttonX);
+        buttonX.setVisible(false);
+    }
+    public void HideButtonY() {
+        ReplaceButtons(buttonY);
+        buttonY.setVisible(false);
+    }
+    public void HideButtonZ() {
+        ReplaceButtons(buttonZ);
+        buttonZ.setVisible(false);
+    }
+
 
 }
 
