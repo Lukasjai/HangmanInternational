@@ -14,8 +14,8 @@ public class List {
         EasyMode.add("coffee");
         EasyMode.add("nature");
         EasyMode.add("people");
-        EasyMode.add("mirror");
-        EasyMode.add("family");
+        EasyMode.add("mirrore");
+        EasyMode.add("familye");
         EasyMode.add("office");
         EasyMode.add("silver");
         EasyMode.add("parent");

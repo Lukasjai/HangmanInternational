@@ -13,9 +13,10 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 import java.util.ResourceBundle;
 
 public class Startseite implements Initializable {
@@ -41,7 +42,22 @@ public class Startseite implements Initializable {
             Playwindow playerNameOutput = fxmlLoader.getController();
             playerNameOutput.showInformation(player_input.getText()); //TODO playerinput darf nicht empty sein, falls empty ->popup
             if (mode.getValue().equals("Easy")) {
-                playerNameOutput.underlines.setText("_ _ _ _ _ _");
+
+                String easyWord = List.EasyRandomWords();
+
+                String[] actual = new String[easyWord.length()];
+                String[] compare = new String[easyWord.length()];
+
+                for (int i = 0; i < easyWord.length(); i++) {
+                    actual[i] = ((easyWord.charAt(i)) + " ");
+                    compare[i] = ("_ ");
+                }
+                String actualword = Arrays.toString(actual).replaceAll("\\[|\\]|," , "");
+                String comapareword = Arrays.toString(compare).replaceAll("\\[|\\]|," , "");
+
+                playerNameOutput.letters.setText(actualword);
+                playerNameOutput.underlines.setText(comapareword);
+
             } else if (mode.getValue().equals("Challenging")) {
                 playerNameOutput.underlines.setText("_ _ _ _ _ _ _ _ _ _ _ _");
             }
