@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class List {
 
-    public static java.util.List<String> EasyMode= new ArrayList<String>();
-    public static java.util.List<String> ChallengingMode= new ArrayList<String>();
+    public static java.util.List<String> EasyMode = new ArrayList<String>();
+    public static java.util.List<String> ChallengingMode = new ArrayList<String>();
 
     public static String SelectEasyMode() {
         EasyMode.add("twenty");
@@ -22,7 +22,8 @@ public class List {
         EasyMode.add("period");
         return null;
     }
-    public static void SelectModeChallenging(){
+
+    public static void SelectModeChallenging() {
         ChallengingMode.add("strawberry");
         ChallengingMode.add("basketball");
         ChallengingMode.add("perfection");
@@ -37,12 +38,24 @@ public class List {
         ChallengingMode.add("restaurant");
         ChallengingMode.add("depression");
     }
-    public static void blalalla(){
-        Method.getRandom();
-        List.EasyMode.get(Method.r);
-    }
-    public static void main(String[] args){
+
+    public static String EasyRandomWords() { //6 Buchstaben
         List.SelectEasyMode();
-        System.out.println(List.EasyMode.get(Method.getRandom()));
+        Method.getRandom();
+        String wort = List.EasyMode.get(Method.r);
+        return wort;
+    }
+
+    public static String ChallengingRandomWords() { //12 Buchstaben
+        List.SelectModeChallenging();
+        Method.getRandom();
+        String wort = List.ChallengingMode.get(Method.r);
+        return wort;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(EasyRandomWords());
+        System.out.println(ChallengingRandomWords());
+
     }
 }

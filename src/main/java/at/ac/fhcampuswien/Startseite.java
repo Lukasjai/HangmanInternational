@@ -19,7 +19,7 @@ import java.util.ResourceBundle;
 
 public class Startseite implements Initializable {
 
-    @FXML
+
     public TextField player_input;
     public Button startButton;
     public ComboBox mode;
@@ -37,23 +37,28 @@ public class Startseite implements Initializable {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/playwindow.fxml"));
             Parent root1 = fxmlLoader.load();
-            Playwindow playWindowOutput = fxmlLoader.getController();
-            playWindowOutput.showInformation(player_input.getText());
+            Playwindow playerNameOutput = fxmlLoader.getController();
+            playerNameOutput.showInformation(player_input.getText()); //TODO playerinput darf nicht empty sein, falls empty ->popup
+            Playwindow mode = fxmlLoader.getController();
+            //mode.showUnderlinesEasy();
             Stage stage = new Stage();
             stage.setTitle("Hangman");
             stage.setScene(new Scene(root1));
             stage.show();
-            App.closeWindow();
+            //App.closeWindow();
         } catch (Exception e) {
             System.out.println("Cant load Game");
         }
 
     }
 
-    public void SelectMode() {
+    /*public void SelectMode() {
+        if (mode.equals("Easy")){
+            Playwindow playWindowOutput =
+        }
         at.ac.fhcampuswien.List.SelectEasyMode();
         at.ac.fhcampuswien.List.SelectModeChallenging();
-    }
+    }*/
 
 
 

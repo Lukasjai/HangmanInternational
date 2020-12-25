@@ -13,9 +13,11 @@ import java.util.ResourceBundle;
 
 public class Playwindow implements Initializable {
 
-    @FXML
+
     public TextField player_output;
     public TextField lifes;
+
+
     public TextField underlines;
     public TextField letters;
 
@@ -69,5 +71,10 @@ public class Playwindow implements Initializable {
     public void showInformation(String playerName) {
         player_output.setText(playerName);
     }
+
+   /* public void showUnderlinesEasy(String underlines){
+        underlines.setText(underlines);
+
+    }*/
 }
 

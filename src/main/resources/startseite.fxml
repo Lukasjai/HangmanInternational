@@ -48,7 +48,7 @@
                   <Image url="@hangman.jpg" />
                </image>
             </ImageView>
-            <ComboBox fx:id="mode" layoutX="305.0" layoutY="243.0" onAction="#SelectMode" prefHeight="25.0" prefWidth="172.0" />
+            <ComboBox fx:id="mode" layoutX="305.0" layoutY="243.0" prefHeight="25.0" prefWidth="172.0" />
          </children>
       </Pane>
    </children>
