@@ -73,9 +73,8 @@ public class Startseite implements Initializable {
         ChallengingMode.add("generation");
         ChallengingMode.add("apocalypse");
         ChallengingMode.add("restaurant");
+        ChallengingMode.add("depression");
     }
-
-
 
 
 }
