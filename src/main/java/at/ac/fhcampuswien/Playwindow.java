@@ -1,7 +1,10 @@
 package at.ac.fhcampuswien;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -9,17 +12,18 @@ import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 
 import java.net.URL;
+import java.util.Arrays;
 import java.util.ResourceBundle;
 
-public class Playwindow implements Initializable {
+public class Playwindow extends Startseite implements Initializable {
 
 
     public TextField player_output;
     public TextField lifes;
 
-@FXML
-    public TextField underlines;
-    public TextField letters;
+    @FXML
+    public TextField underlines; //compare
+    public TextField letters;    //actual
 
 
     public Line hangman1;
@@ -60,15 +64,42 @@ public class Playwindow implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
     }
-    public void HideButtonA(){
+
+    public void HideButtonA() {
+
         buttonA.setVisible(false);
     }
-    public void HideButtonB(){
+
+    public void HideButtonB() {
         buttonB.setVisible(false);
     }
 
     public void showInformation(String playerName) {
         player_output.setText(playerName);
+    }
+
+    public void HideButtonE() {
+        ReplaceButtons(buttonE);
+        buttonE.setVisible(false);
+    }
+
+    public void ReplaceButtons(Button button){
+        for (int i = 0; i < easyWord.length(); i++) {
+            actual[i] = ((easyWord.charAt(i)) + " ");
+            compare[i] = ("_ ");
+        }
+
+        for (int i = 0; i < actual.length; i++) {
+            if (actual[i].equals(button.getText() + " ")) {
+                compare[i] = button.getText() + " ";
+            }
+
+            actualWord = Arrays.toString(actual).replaceAll("\\[|\\]|," , "");
+            compareWord = Arrays.toString(compare).replaceAll("\\[|\\]|," , "");
+            letters.setText(actualWord);
+            underlines.setText(compareWord);
+
+        }
     }
 
 }

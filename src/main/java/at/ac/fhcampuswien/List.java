@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class List {
 
-    public static java.util.List<String> EasyMode = new ArrayList<String>();
-    public static java.util.List<String> ChallengingMode = new ArrayList<String>();
+    public static java.util.List<String> EasyMode = new ArrayList<>();
+    public static java.util.List<String> ChallengingMode = new ArrayList<>();
 
     public static String SelectEasyMode() {
         EasyMode.add("twenty");
@@ -42,14 +42,14 @@ public class List {
     public static String EasyRandomWords() { //6 Buchstaben
         List.SelectEasyMode();
         Method.getRandom();
-        String wort = List.EasyMode.get(Method.r);
+        String wort = List.EasyMode.get(Method.r).toUpperCase();
         return wort;
     }
 
     public static String ChallengingRandomWords() { //10 Buchstaben
         List.SelectModeChallenging();
         Method.getRandom();
-        String wort = List.ChallengingMode.get(Method.r);
+        String wort = List.ChallengingMode.get(Method.r).toUpperCase();
         return wort;
     }
 

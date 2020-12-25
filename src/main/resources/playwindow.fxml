@@ -28,7 +28,7 @@
             <Button fx:id="buttonB" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonB" prefHeight="40.0" prefWidth="40.0" text="B" />
             <Button fx:id="buttonC" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="C" />
             <Button fx:id="buttonD" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="D" />
-            <Button fx:id="buttonE" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="E" />
+            <Button fx:id="buttonE" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonE" prefHeight="40.0" prefWidth="40.0" text="E" />
             <Button fx:id="buttonF" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="F" />
             <Button fx:id="buttonG" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="G" />
             <Button fx:id="buttonH" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="H" />
