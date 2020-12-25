@@ -13,6 +13,7 @@ import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class Startseite implements Initializable {
@@ -21,7 +22,8 @@ public class Startseite implements Initializable {
     public TextField player;
     public Button startButton;
     public ComboBox mode;
-
+    List<String> EasyMode= new ArrayList<String>();
+    List<String> ChallengingMode= new ArrayList<String>();
 
 
     @Override
@@ -45,8 +47,8 @@ public class Startseite implements Initializable {
     }
 
     public void SelectMode() {
-        List.SelectEasyMode();
-        List.SelectModeChallenging();
+        at.ac.fhcampuswien.List.SelectEasyMode();
+        at.ac.fhcampuswien.List.SelectModeChallenging();
     }
 
 

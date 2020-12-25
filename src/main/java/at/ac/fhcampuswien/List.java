@@ -36,4 +36,12 @@ public class List {
         ChallengingMode.add("restaurant");
         ChallengingMode.add("depression");
     }
+    public static void blalalla(){
+        Method.getRandom();
+        List.EasyMode.get(Method.r);
+    }
+    public static void main(String[] args){
+        List.SelectEasyMode();
+        System.out.println(List.EasyMode.get(Method.getRandom()));
+    }
 }
