@@ -68,11 +68,10 @@ public class Playwindow extends Startseite implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
     }
 
 
-    public void ReplaceButtons(Button button) {
+    public void ReplaceButtons(Button button) throws IOException {
         for (int i = 0; i < actual.length; i++) {
             if (actual[i].equals(button.getText() + " ")) {
                 compare[i] = button.getText() + " ";
@@ -89,7 +88,7 @@ public class Playwindow extends Startseite implements Initializable {
         Lifecounter();
     }
 
-    public int  Lifecounter ()  {
+    public int  Lifecounter () throws IOException {
         lifes.setText(String.valueOf(lifescounter));
         mistakes=0;
         switch (lifescounter){
@@ -112,131 +111,124 @@ public class Playwindow extends Startseite implements Initializable {
         return lifescounter;
     }
 
-    public void LooseWindow() {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/loose.fxml"));
-            Parent root1 = fxmlLoader.load();
-            Playwindow playerNameOutput = fxmlLoader.getController();
-            playerNameOutput.showInformation(player_output.getText());
-            playerNameOutput.Lifecounter();
-            Stage stage = new Stage();
-            stage.setTitle("Hangman");
-            stage.setScene(new Scene(root1));
-            stage.show();
-            //App.closeWindow();
-        } catch (Exception e) {
-            System.out.println("Cant load Game");
-        }
+    public void LooseWindow() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/loose.fxml"));
+        Parent root1 = fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.setTitle("Hangman");
+        stage.setScene(new Scene(root1));
+        stage.show();
+        //App.closeWindow();
     }
 
     public void showInformation(String playerName) {
         player_output.setText(playerName);
     }
 
-    public void HideButtonA() {
+    public void HideButtonA() throws IOException {
         ReplaceButtons(buttonA);
         buttonA.setVisible(false);
     }
 
-    public void HideButtonB() {
+    public void HideButtonB() throws IOException {
         ReplaceButtons(buttonB);
         buttonB.setVisible(false);
     }
 
-    public void HideButtonC() {
+    public void HideButtonC() throws IOException {
         ReplaceButtons(buttonC);
         buttonC.setVisible(false);
     }
-    public void HideButtonD() {
+    public void HideButtonD() throws IOException {
         ReplaceButtons(buttonD);
         buttonD.setVisible(false);
     }
 
-    public void HideButtonE() {
+    public void HideButtonE() throws IOException {
         ReplaceButtons(buttonE);
         buttonE.setVisible(false);
     }
-    public void HideButtonF() {
+    public void HideButtonF() throws IOException {
         ReplaceButtons(buttonF);
         buttonF.setVisible(false);
     }
-    public void HideButtonG() {
+    public void HideButtonG() throws IOException {
         ReplaceButtons(buttonG);
         buttonG.setVisible(false);
     }
-    public void HideButtonH() {
+    public void HideButtonH() throws IOException {
         ReplaceButtons(buttonH);
         buttonH.setVisible(false);
     }
-    public void HideButtonI() {
+    public void HideButtonI() throws IOException {
         ReplaceButtons(buttonI);
         buttonI.setVisible(false);
     }
-    public void HideButtonJ() {
+    public void HideButtonJ() throws IOException {
         ReplaceButtons(buttonJ);
         buttonJ.setVisible(false);
     }
-    public void HideButtonK() {
+    public void HideButtonK() throws IOException {
         ReplaceButtons(buttonK);
         buttonK.setVisible(false);
     }
-    public void HideButtonL() {
+    public void HideButtonL() throws IOException {
         ReplaceButtons(buttonL);
         buttonL.setVisible(false);
     }
-    public void HideButtonM() {
+    public void HideButtonM() throws IOException {
         ReplaceButtons(buttonM);
         buttonM.setVisible(false);
     }
-    public void HideButtonN() {
+    public void HideButtonN() throws IOException {
         ReplaceButtons(buttonN);
         buttonN.setVisible(false);
     }
-    public void HideButtonO() {
+    public void HideButtonO() throws IOException {
         ReplaceButtons(buttonO);
         buttonO.setVisible(false);
     }
-    public void HideButtonP() {
+    public void HideButtonP() throws IOException {
         ReplaceButtons(buttonP);
         buttonP.setVisible(false);
     }
-    public void HideButtonQ() {
+    public void HideButtonQ() throws IOException {
         ReplaceButtons(buttonQ);
         buttonQ.setVisible(false);
     }
-    public void HideButtonR() {
+    public void HideButtonR() throws IOException {
         ReplaceButtons(buttonR);
         buttonR.setVisible(false);
     }
-    public void HideButtonS() {
+    public void HideButtonS() throws IOException {
         ReplaceButtons(buttonS);
         buttonS.setVisible(false);
     }
-    public void HideButtonT() {
+    public void HideButtonT() throws IOException {
         ReplaceButtons(buttonT);
         buttonT.setVisible(false);
     }
-    public void HideButtonU() {
+    public void HideButtonU() throws IOException {
         ReplaceButtons(buttonU);
         buttonU.setVisible(false);
     }
-    public void HideButtonV() {
+    public void HideButtonV() throws IOException {
         ReplaceButtons(buttonV);
         buttonV.setVisible(false);
     }
-    public void HideButtonW() {
+    public void HideButtonW() throws IOException {
         ReplaceButtons(buttonW);
         buttonW.setVisible(false);
     }
-    public void HideButtonX() {
+    public void HideButtonX() throws IOException {
         ReplaceButtons(buttonX);
         buttonX.setVisible(false);
     }
-    public void HideButtonY() {
+    public void HideButtonY() throws IOException {
         ReplaceButtons(buttonY);
         buttonY.setVisible(false);
     }
-    public void HideButtonZ() {
+    public void HideButtonZ() throws IOException {
         ReplaceButtons(buttonZ);
         buttonZ.setVisible(false);
     }
