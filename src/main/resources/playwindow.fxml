@@ -57,7 +57,7 @@
             <Button fx:id="buttonZ" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#HideButtonZ" prefHeight="40.0" prefWidth="40.0" text="Z" />
          </children>
       </HBox>
-      <TextField fx:id="player_output" layoutX="231.0" layoutY="151.0" style="-fx-background-color: #f7f439;" text="Player">
+      <TextField fx:id="player_output" editable="false" layoutX="231.0" layoutY="151.0" style="-fx-background-color: #f7f439;" text="Player">
          <font>
             <Font size="24.0" />
          </font></TextField>
@@ -66,7 +66,7 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="lifes" layoutX="231.0" layoutY="213.0" style="-fx-background-color: #f7f439;" text="Player">
+      <TextField fx:id="lifes" editable="false" layoutX="231.0" layoutY="213.0" style="-fx-background-color: #f7f439;" text="Player">
          <font>
             <Font size="24.0" />
          </font></TextField>
