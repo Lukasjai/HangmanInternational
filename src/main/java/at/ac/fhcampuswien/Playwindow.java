@@ -89,6 +89,21 @@ public class Playwindow extends Startseite implements Initializable {
     public int  Lifecounter (){
         lifes.setText(String.valueOf(lifescounter));
         mistakes=0;
+        switch (lifescounter){
+            case 5: hangman1.setVisible(true);
+            break;
+            case 4: hangman2.setVisible(true);
+            break;
+            case 3: hangman3.setVisible(true);
+            break;
+            case 2: hangman4.setVisible(true);
+            break;
+            case 1: hangman5.setVisible(true);
+            break;
+            case 0: hangman6.setVisible(true);
+                    hangman7.setVisible(true);
+                    break;
+        }
         return lifescounter;
     }
 
