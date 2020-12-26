@@ -18,6 +18,7 @@ public class ConfirmBox2 {
         window.initModality(Modality.APPLICATION_MODAL); //muss zuerst dieses Fenster schließen bevor ich ein anderes verwenden kann
         window.setTitle(title);
         window.setMinWidth(250);
+        window.setMinHeight(250);
         Label label1 = new Label();
         label1.setText(message);
 
