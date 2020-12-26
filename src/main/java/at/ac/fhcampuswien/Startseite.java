@@ -75,7 +75,7 @@ public class Startseite implements Initializable {
             stage.setTitle("Hangman");
             stage.setScene(new Scene(root1));
             stage.show();
-            //App.closeWindow();
+            App.closeWindow();
         } catch (Exception e) {
             System.out.println("Cant load Game");
         }
