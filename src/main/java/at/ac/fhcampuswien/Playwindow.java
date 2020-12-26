@@ -135,6 +135,7 @@ public class Playwindow extends Startseite implements Initializable {
         window.setTitle("Hangman");
         window.setScene(new Scene(root1));
         window.show();
+        Startseite.closeWindow();
         window.setOnCloseRequest(e -> {
             e.consume(); //damit das fenster bei no nicht schließt
             closeProgram();
@@ -155,6 +156,7 @@ public class Playwindow extends Startseite implements Initializable {
         window.setTitle("Hangman");
         window.setScene(new Scene(root1));
         window.show();
+        Startseite.closeWindow();
         window.setOnCloseRequest(e -> {
             e.consume(); //damit das fenster bei no nicht schließt
             closeProgram();

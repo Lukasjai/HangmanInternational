@@ -13,16 +13,17 @@ import java.io.IOException;
 public class Win{
     public Button tryAgainButton;
     public TextField nameWon;
+    public static Stage window;
 
     public void TryAgain(ActionEvent actionEvent) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/startseite.fxml"));
         Parent root1 = fxmlLoader.load();
-        Stage stage = new Stage();
-        stage.setTitle("Hangman");
-        stage.setScene(new Scene(root1));
-        stage.show();
-        //App.closeWindow();
-
+        window= new Stage();
+        window.setTitle("Hangman");
+        window.setScene(new Scene(root1));
+        window.show();
+        Playwindow.closeWindow();
+        Startseite.closeWindow();
     }
 
     public void showInformation(String playerName) {
