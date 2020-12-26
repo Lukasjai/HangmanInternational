@@ -5,13 +5,16 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.Arrays;
 import java.util.ResourceBundle;
@@ -69,7 +72,7 @@ public class Playwindow extends Startseite implements Initializable {
     }
 
 
-    public void ReplaceButtons(Button button){
+    public void ReplaceButtons(Button button) {
         for (int i = 0; i < actual.length; i++) {
             if (actual[i].equals(button.getText() + " ")) {
                 compare[i] = button.getText() + " ";
@@ -86,7 +89,7 @@ public class Playwindow extends Startseite implements Initializable {
         Lifecounter();
     }
 
-    public int  Lifecounter (){
+    public int  Lifecounter ()  {
         lifes.setText(String.valueOf(lifescounter));
         mistakes=0;
         switch (lifescounter){
@@ -102,9 +105,28 @@ public class Playwindow extends Startseite implements Initializable {
             break;
             case 0: hangman6.setVisible(true);
                     hangman7.setVisible(true);
+                    LooseWindow();
                     break;
+
         }
         return lifescounter;
+    }
+
+    public void LooseWindow() {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/loose.fxml"));
+            Parent root1 = fxmlLoader.load();
+            Playwindow playerNameOutput = fxmlLoader.getController();
+            playerNameOutput.showInformation(player_output.getText());
+            playerNameOutput.Lifecounter();
+            Stage stage = new Stage();
+            stage.setTitle("Hangman");
+            stage.setScene(new Scene(root1));
+            stage.show();
+            //App.closeWindow();
+        } catch (Exception e) {
+            System.out.println("Cant load Game");
+        }
     }
 
     public void showInformation(String playerName) {
