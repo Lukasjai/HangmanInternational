@@ -26,6 +26,7 @@ public class Startseite implements Initializable {
     public static String[] compare = new String[easyWord.length()];
     public static String actualWord;
     public static String compareWord;
+    public static String startunderlines="";
     public static int lifescounter = 6;
     public static int mistakes = 0;
     public static int close=0;
@@ -60,6 +61,10 @@ public class Startseite implements Initializable {
             if (mode.getValue().equals("Easy")) {
                 actual = new String[easyWord.length()];
                 compare = new String[easyWord.length()];
+                for (int i=0; i<easyWord.length();i++){
+                    startunderlines=startunderlines+"_  ";
+                }
+                playerNameOutput.underlines.setText(startunderlines);
                 for (int i = 0; i < easyWord.length(); i++) {
                     actual[i] = ((easyWord.charAt(i)) + " ");
                     compare[i] = ("_ ");
@@ -68,6 +73,10 @@ public class Startseite implements Initializable {
             } else if (mode.getValue().equals("Medium")) {
                 actual = new String[mediumWord.length()];
                 compare = new String[mediumWord.length()];
+                for (int i=0; i<mediumWord.length();i++){
+                    startunderlines=startunderlines+"_  ";
+                }
+                playerNameOutput.underlines.setText(startunderlines);
                 for (int i = 0; i < mediumWord.length(); i++) {
                     actual[i] = ((mediumWord.charAt(i)) + " ");
                     compare[i] = ("_ ");
@@ -75,6 +84,10 @@ public class Startseite implements Initializable {
             } else if (mode.getValue().equals("Challenging")) {
                 actual = new String[challengingWord.length()];
                 compare = new String[challengingWord.length()];
+                for (int i=0; i<challengingWord.length();i++){
+                    startunderlines=startunderlines+"_  ";
+                }
+                playerNameOutput.underlines.setText(startunderlines);
                 for (int i = 0; i < challengingWord.length(); i++) {
                     actual[i] = ((challengingWord.charAt(i)) + " ");
                     compare[i] = ("_ ");

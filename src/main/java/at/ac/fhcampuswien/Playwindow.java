@@ -89,6 +89,7 @@ public class Playwindow extends Startseite implements Initializable {
             WinWindow();
             lifescounter = 6;
             close=10;
+            startunderlines="";
         }
 
         Lifecounter();
@@ -119,6 +120,7 @@ public class Playwindow extends Startseite implements Initializable {
                 LooseWindow();
                 lifescounter = 6;
                 close=20;
+                startunderlines="";
                 break;
 
         }
