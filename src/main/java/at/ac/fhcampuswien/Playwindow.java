@@ -77,69 +77,94 @@ public class Playwindow extends Startseite implements Initializable {
                 compare[i] = button.getText() + " ";
                 mistakes++;
             }
-            actualWord = Arrays.toString(actual).replaceAll("\\[|\\]|," , "");
-            compareWord = Arrays.toString(compare).replaceAll("\\[|\\]|," , "");
+            actualWord = Arrays.toString(actual).replaceAll("\\[|\\]|,", "");
+            compareWord = Arrays.toString(compare).replaceAll("\\[|\\]|,", "");
             letters.setText(actualWord);
             underlines.setText(compareWord);
         }
-        if (mistakes==0){
+        if (mistakes == 0) {
             lifescounter--;
         }
-        if (actualWord.equals(compareWord)){
+        if (actualWord.equals(compareWord)) {
             WinWindow();
-            lifescounter=6;
+            lifescounter = 6;
         }
 
         Lifecounter();
     }
 
-    public int  Lifecounter () throws IOException {
+    public int Lifecounter() throws IOException {
         lifes.setText(String.valueOf(lifescounter));
-        mistakes=0;
-        switch (lifescounter){
-            case 5: hangman1.setVisible(true);
-            break;
-            case 4: hangman2.setVisible(true);
-            break;
-            case 3: hangman3.setVisible(true);
-            break;
-            case 2: hangman4.setVisible(true);
-            break;
-            case 1: hangman5.setVisible(true);
-            break;
-            case 0: hangman6.setVisible(true);
-                    hangman7.setVisible(true);
-                    LooseWindow();
-                    lifescounter=6;
-                    break;
+        mistakes = 0;
+        switch (lifescounter) {
+            case 5:
+                hangman1.setVisible(true);
+                break;
+            case 4:
+                hangman2.setVisible(true);
+                break;
+            case 3:
+                hangman3.setVisible(true);
+                break;
+            case 2:
+                hangman4.setVisible(true);
+                break;
+            case 1:
+                hangman5.setVisible(true);
+                break;
+            case 0:
+                hangman6.setVisible(true);
+                hangman7.setVisible(true);
+                LooseWindow();
+                lifescounter = 6;
+                break;
 
         }
         return lifescounter;
     }
+
+    public static Stage window;
+
 
     public void WinWindow() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/win.fxml"));
         Parent root1 = fxmlLoader.load();
         Win playerNameOutput = fxmlLoader.getController();
         playerNameOutput.showInformation(player_output.getText());
-        Stage stage = new Stage();
-        stage.setTitle("Hangman");
-        stage.setScene(new Scene(root1));
-        stage.show();
-        //App.closeWindow();
+        window = new Stage();
+        window.setTitle("Hangman");
+        window.setScene(new Scene(root1));
+        window.show();
+        window.setOnCloseRequest(e -> {
+            e.consume(); //damit das fenster bei no nicht schließt
+            closeProgram();
+        });
+
     }
 
+    public static void closeWindow(){
+        window.close();
+    }
 
     public void LooseWindow() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/loose.fxml"));
         Parent root1 = fxmlLoader.load();
         Loose playerNameOutput = fxmlLoader.getController();
         playerNameOutput.showInformation(player_output.getText());
-        Stage stage = new Stage();
-        stage.setTitle("Hangman");
-        stage.setScene(new Scene(root1));
-        stage.show();
-        //App.closeWindow();
+        window = new Stage();
+        window.setTitle("Hangman");
+        window.setScene(new Scene(root1));
+        window.show();
+        window.setOnCloseRequest(e -> {
+            e.consume(); //damit das fenster bei no nicht schließt
+            closeProgram();
+        });
+    }
+
+    private void closeProgram() {
+        boolean answer = ConfirmBox.display("Close Window", "Sure you want to exit?");
+        if (answer)
+            window.close();
     }
 
     public void showInformation(String playerName) {
@@ -160,6 +185,7 @@ public class Playwindow extends Startseite implements Initializable {
         ReplaceButtons(buttonC);
         buttonC.setVisible(false);
     }
+
     public void HideButtonD() throws IOException {
         ReplaceButtons(buttonD);
         buttonD.setVisible(false);
@@ -169,86 +195,107 @@ public class Playwindow extends Startseite implements Initializable {
         ReplaceButtons(buttonE);
         buttonE.setVisible(false);
     }
+
     public void HideButtonF() throws IOException {
         ReplaceButtons(buttonF);
         buttonF.setVisible(false);
     }
+
     public void HideButtonG() throws IOException {
         ReplaceButtons(buttonG);
         buttonG.setVisible(false);
     }
+
     public void HideButtonH() throws IOException {
         ReplaceButtons(buttonH);
         buttonH.setVisible(false);
     }
+
     public void HideButtonI() throws IOException {
         ReplaceButtons(buttonI);
         buttonI.setVisible(false);
     }
+
     public void HideButtonJ() throws IOException {
         ReplaceButtons(buttonJ);
         buttonJ.setVisible(false);
     }
+
     public void HideButtonK() throws IOException {
         ReplaceButtons(buttonK);
         buttonK.setVisible(false);
     }
+
     public void HideButtonL() throws IOException {
         ReplaceButtons(buttonL);
         buttonL.setVisible(false);
     }
+
     public void HideButtonM() throws IOException {
         ReplaceButtons(buttonM);
         buttonM.setVisible(false);
     }
+
     public void HideButtonN() throws IOException {
         ReplaceButtons(buttonN);
         buttonN.setVisible(false);
     }
+
     public void HideButtonO() throws IOException {
         ReplaceButtons(buttonO);
         buttonO.setVisible(false);
     }
+
     public void HideButtonP() throws IOException {
         ReplaceButtons(buttonP);
         buttonP.setVisible(false);
     }
+
     public void HideButtonQ() throws IOException {
         ReplaceButtons(buttonQ);
         buttonQ.setVisible(false);
     }
+
     public void HideButtonR() throws IOException {
         ReplaceButtons(buttonR);
         buttonR.setVisible(false);
     }
+
     public void HideButtonS() throws IOException {
         ReplaceButtons(buttonS);
         buttonS.setVisible(false);
     }
+
     public void HideButtonT() throws IOException {
         ReplaceButtons(buttonT);
         buttonT.setVisible(false);
     }
+
     public void HideButtonU() throws IOException {
         ReplaceButtons(buttonU);
         buttonU.setVisible(false);
     }
+
     public void HideButtonV() throws IOException {
         ReplaceButtons(buttonV);
         buttonV.setVisible(false);
     }
+
     public void HideButtonW() throws IOException {
         ReplaceButtons(buttonW);
         buttonW.setVisible(false);
     }
+
     public void HideButtonX() throws IOException {
         ReplaceButtons(buttonX);
         buttonX.setVisible(false);
     }
+
     public void HideButtonY() throws IOException {
         ReplaceButtons(buttonY);
         buttonY.setVisible(false);
     }
+
     public void HideButtonZ() throws IOException {
         ReplaceButtons(buttonZ);
         buttonZ.setVisible(false);

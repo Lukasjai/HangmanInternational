@@ -14,18 +14,21 @@ import javafx.stage.Stage;
 public class Loose {
     public Button tryAgainButton;
     public TextField nameLost;
+    public static Stage window;
 
-    public void TryAgain(ActionEvent actionEvent) throws Exception {
+    public void TryAgain() throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/startseite.fxml"));
         Parent root1 = fxmlLoader.load();
-        Stage stage = new Stage();
-        stage.setTitle("Hangman");
-        stage.setScene(new Scene(root1));
-        stage.show();
-        //App.closeWindow();
-
+        window = new Stage();
+        window.setTitle("Hangman");
+        window.setScene(new Scene(root1));
+        window.show();
+        Playwindow.closeWindow();
+        Startseite.closeWindow();
 
     }
+
+
 
     public void showInformation(String playerName) {
         nameLost.setText(playerName);

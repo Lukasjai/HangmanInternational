@@ -32,6 +32,8 @@ public class App extends Application {
         Boolean answer = ConfirmBox.display("Close Window", "Sure you want to exit?");
         if(answer)
             window.close();
+
+
     }
     public static void closeWindow(){
         window.close();
