@@ -88,6 +88,7 @@ public class Playwindow extends Startseite implements Initializable {
         if (actualWord.equals(compareWord)) {
             WinWindow();
             lifescounter = 6;
+            close=10;
         }
 
         Lifecounter();
@@ -117,6 +118,7 @@ public class Playwindow extends Startseite implements Initializable {
                 hangman7.setVisible(true);
                 LooseWindow();
                 lifescounter = 6;
+                close=20;
                 break;
 
         }
@@ -152,6 +154,7 @@ public class Playwindow extends Startseite implements Initializable {
         Parent root1 = fxmlLoader.load();
         Loose playerNameOutput = fxmlLoader.getController();
         playerNameOutput.showInformation(player_output.getText());
+        playerNameOutput.showWord(actualWord);
         window = new Stage();
         window.setTitle("Hangman");
         window.setScene(new Scene(root1));

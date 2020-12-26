@@ -29,4 +29,7 @@ public class Win{
     public void showInformation(String playerName) {
         nameWon.setText(playerName);
     }
+    public static void closeWindow() {
+        window.close();
+    }
 }

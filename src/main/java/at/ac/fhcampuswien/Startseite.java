@@ -27,7 +27,7 @@ public class Startseite implements Initializable {
     public static String compareWord;
     public static int lifescounter = 6;
     public static int mistakes = 0;
-
+    public static int close=0;
     public static Stage window;
 
 
@@ -79,7 +79,15 @@ public class Startseite implements Initializable {
             window.setTitle("Hangman");
             window.setScene(new Scene(root1));
             window.show();
-            App.closeWindow();
+            if(close==0){
+                App.closeWindow();
+            }
+            else if (close==10){
+                Win.closeWindow();
+            }
+            else {
+                Loose.closeWindow();
+            }
             window.setOnCloseRequest(e -> {
                 e.consume(); //damit das fenster bei no nicht schließt
                 closeProgram();
