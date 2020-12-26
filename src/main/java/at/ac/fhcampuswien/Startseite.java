@@ -19,6 +19,7 @@ public class Startseite implements Initializable {
     public Button startButton;
     public ComboBox<String> mode;
     public static String easyWord = List.EasyRandomWords();
+    public static String challengingWord = List.ChallengingRandomWords();
     public static String[] actual = new String[easyWord.length()];
     public static String[] compare = new String[easyWord.length()];
     public static String actualWord;
@@ -48,7 +49,12 @@ public class Startseite implements Initializable {
                 }
 
             } else if (mode.getValue().equals("Challenging")) {
-                playerNameOutput.underlines.setText("_ _ _ _ _ _ _ _ _ _ _ _");
+                actual=new String[challengingWord.length()];
+                compare=new String[challengingWord.length()];
+                for (int i = 0; i < challengingWord.length(); i++) {
+                    actual[i] = ((challengingWord.charAt(i)) + " ");
+                    compare[i] = ("_ ");
+                }
             }
             Stage stage = new Stage();
             stage.setTitle("Hangman");

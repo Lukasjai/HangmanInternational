@@ -14,8 +14,8 @@ public class List {
         EasyMode.add("coffee");
         EasyMode.add("nature");
         EasyMode.add("people");
-        EasyMode.add("mirrore");
-        EasyMode.add("familye");
+        EasyMode.add("mirror");
+        EasyMode.add("family");
         EasyMode.add("office");
         EasyMode.add("silver");
         EasyMode.add("parent");
@@ -53,9 +53,4 @@ public class List {
         return wort;
     }
 
-    public static void main(String[] args) {
-        System.out.println(EasyRandomWords());
-        System.out.println(ChallengingRandomWords());
-
-    }
 }
