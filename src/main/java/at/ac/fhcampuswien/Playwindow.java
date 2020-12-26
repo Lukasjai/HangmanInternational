@@ -70,23 +70,26 @@ public class Playwindow extends Startseite implements Initializable {
 
 
     public void ReplaceButtons(Button button){
-
         for (int i = 0; i < actual.length; i++) {
             if (actual[i].equals(button.getText() + " ")) {
                 compare[i] = button.getText() + " ";
+                mistakes++;
             }
-
             actualWord = Arrays.toString(actual).replaceAll("\\[|\\]|," , "");
             compareWord = Arrays.toString(compare).replaceAll("\\[|\\]|," , "");
             letters.setText(actualWord);
             underlines.setText(compareWord);
-
         }
+        if (mistakes==0){
+            lifescounter--;
+        }
+        Lifecounter();
     }
 
-    public int  Lifecounter (int life){
-        lifes.setText(String.valueOf(life));
-        return life;
+    public int  Lifecounter (){
+        lifes.setText(String.valueOf(lifescounter));
+        mistakes=0;
+        return lifescounter;
     }
 
     public void showInformation(String playerName) {

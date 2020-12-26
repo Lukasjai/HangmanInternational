@@ -25,6 +25,8 @@ public class Startseite implements Initializable {
     public static String[] compare = new String[easyWord.length()];
     public static String actualWord;
     public static String compareWord;
+    public static int lifescounter=6;
+    public static int mistakes=0;
 
 
 
@@ -43,7 +45,7 @@ public class Startseite implements Initializable {
             Parent root1 = fxmlLoader.load();
             Playwindow playerNameOutput = fxmlLoader.getController();
             playerNameOutput.showInformation(player_input.getText()); //TODO playerinput darf nicht empty sein, falls empty ->popup
-            playerNameOutput.Lifecounter(6);
+            playerNameOutput.Lifecounter();
 
             if (mode.getValue().equals("Easy")) {
                 actual=new String[easyWord.length()];
