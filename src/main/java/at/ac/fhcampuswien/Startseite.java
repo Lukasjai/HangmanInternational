@@ -47,11 +47,15 @@ public class Startseite implements Initializable {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/playwindow.fxml"));
             Parent root1 = fxmlLoader.load();
             Playwindow playerNameOutput = fxmlLoader.getController();
+            if (player_input.getText().equals("")){
+                player_input.setText("Anonymous");
+            }
             playerNameOutput.showInformation(player_input.getText()); //TODO playerinput darf nicht empty sein, falls empty ->popup
             playerNameOutput.Lifecounter();
             easyWord = List.EasyRandomWords();
             mediumWord = List.MediumRandomWords();
             challengingWord = List.ChallengingRandomWords();
+
 
             if (mode.getValue().equals("Easy")) {
                 actual = new String[easyWord.length()];

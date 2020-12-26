@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 
 public class Loose {
     public Button tryAgainButton;
-    public TextField nameLost;
+    public Label nameLost;
     public static Stage window;
     public Label WordOutput;
     public Label WordWas;

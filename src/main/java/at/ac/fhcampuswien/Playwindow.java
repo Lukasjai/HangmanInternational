@@ -22,8 +22,8 @@ import java.util.ResourceBundle;
 public class Playwindow extends Startseite implements Initializable {
 
 
-    public TextField player_output;
-    public TextField lifes;
+    public Label player_output;
+    public Label lifes;
 
     @FXML
     public TextField underlines; //compare

@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -13,7 +14,7 @@ import java.io.IOException;
 
 public class Win {
     public Button tryAgainButton;
-    public TextField nameWon;
+    public Label nameWon;
     public static Stage window;
 
     public void TryAgain(ActionEvent actionEvent) throws Exception {
