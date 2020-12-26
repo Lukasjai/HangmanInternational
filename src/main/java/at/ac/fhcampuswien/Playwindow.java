@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 
@@ -27,7 +28,7 @@ public class Playwindow extends Startseite implements Initializable {
 
 
     public Line hangman1;
-    public Circle hangman2;
+    public ImageView hangman2;
     public Line hangman3;
     public Line hangman5;
     public Line hangman4;
@@ -60,6 +61,7 @@ public class Playwindow extends Startseite implements Initializable {
     public Button buttonX;
     public Button buttonY;
     public Button buttonZ;
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

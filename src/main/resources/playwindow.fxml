@@ -3,16 +3,17 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="background" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f7f439;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.Playwindow">
    <children>
-      <Label layoutX="278.0" layoutY="30.0" prefHeight="76.0" prefWidth="244.0" text="Hangman">
+      <Label layoutX="285.0" layoutY="19.0" prefHeight="76.0" prefWidth="244.0" text="Hangman">
          <font>
             <Font name="Jokerman" size="48.0" />
          </font>
@@ -63,23 +64,27 @@
          </font>
       </Label>
       <TextField fx:id="lifes" disable="true" layoutX="228.0" layoutY="201.0" promptText="Player" />
-      <TextField fx:id="underlines" layoutX="69.0" layoutY="298.0" prefHeight="100.0" prefWidth="500.0" promptText="_" style="-fx-background-color: #f7f439;">
+      <TextField fx:id="underlines" layoutX="76.0" layoutY="300.0" prefHeight="100.0" prefWidth="500.0" promptText="_" style="-fx-background-color: #f7f439;">
          <font>
             <Font size="48.0" />
          </font></TextField>
-      <TextField fx:id="letters" disable="true" layoutX="69.0" layoutY="249.0" prefHeight="100.0" prefWidth="500.0" text="T E S T">
+      <TextField fx:id="letters" disable="true" layoutX="76.0" layoutY="262.0" prefHeight="100.0" prefWidth="500.0" text="T E S T">
          <font>
             <Font size="48.0" />
          </font></TextField>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="244.0" layoutX="533.0" layoutY="118.0" stroke="BLACK" strokeType="INSIDE" width="23.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="26.0" layoutX="511.0" layoutY="349.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="26.0" layoutX="498.0" layoutY="105.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-      <Line fx:id="hangman1" endX="-43.0" endY="-9.000015258789062" layoutX="672.0" layoutY="172.0" startX="-43.5999755859375" startY="-41.00001525878906" strokeWidth="3.0" />
-      <Circle fx:id="hangman2" fill="DODGERBLUE" layoutX="629.0" layoutY="180.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
-      <Line fx:id="hangman3" endX="2.4000244140625" endY="63.20001220703125" layoutX="628.0" layoutY="196.0" startX="1.0" startY="0.9999847412109375" strokeWidth="3.0" />
-      <Line fx:id="hangman5" endX="20.2786865234375" endY="12.121292114257812" layoutX="608.0" layoutY="214.0" startX="-17.5999755859375" startY="-6.8000030517578125" strokeWidth="3.0" />
-      <Line fx:id="hangman4" endX="32.0" endY="-12.000015258789062" layoutX="632.0" layoutY="224.0" startX="-1.5999755859375" startY="-1.52587890625E-5" strokeWidth="3.0" />
-      <Line fx:id="hangman7" endX="-1.0999755859375" endY="-0.29998779296875" layoutX="632.0" layoutY="260.0" startX="-33.5999755859375" startY="32.0" strokeWidth="3.0" />
-      <Line fx:id="hangman6" endX="31.5999755859375" endY="32.800018310546875" layoutX="630.0" layoutY="260.0" startX="0.4000244140625" strokeWidth="3.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="244.0" layoutX="598.0" layoutY="44.0" stroke="BLACK" strokeType="INSIDE" width="23.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="26.0" layoutX="576.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="26.0" layoutX="569.0" layoutY="31.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Line fx:id="hangman1" endX="-43.0" endY="-9.000015258789062" layoutX="737.0" layoutY="98.0" startX="-43.5999755859375" startY="-41.00001525878906" strokeWidth="3.0" />
+      <Line fx:id="hangman3" endX="2.4000244140625" endY="63.20001220703125" layoutX="693.0" layoutY="122.0" startX="1.0" startY="0.9999847412109375" strokeWidth="3.0" />
+      <Line fx:id="hangman5" endX="20.2786865234375" endY="12.121292114257812" layoutX="673.0" layoutY="140.0" startX="-17.5999755859375" startY="-6.8000030517578125" strokeWidth="3.0" />
+      <Line fx:id="hangman4" endX="32.0" endY="-12.000015258789062" layoutX="697.0" layoutY="150.0" startX="-1.5999755859375" startY="-1.52587890625E-5" strokeWidth="3.0" />
+      <Line fx:id="hangman7" endX="-1.0999755859375" endY="-0.29998779296875" layoutX="697.0" layoutY="186.0" startX="-33.5999755859375" startY="32.0" strokeWidth="3.0" />
+      <Line fx:id="hangman6" endX="31.5999755859375" endY="32.800018310546875" layoutX="695.0" layoutY="186.0" startX="0.4000244140625" strokeWidth="3.0" />
+      <ImageView fx:id="hangman2" fitHeight="40.0" fitWidth="49.0" layoutX="669.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Troll.jpg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

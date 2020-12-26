@@ -10,7 +10,6 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.net.URL;
-import java.util.Arrays;
 import java.util.ResourceBundle;
 
 public class Startseite implements Initializable {
@@ -18,7 +17,7 @@ public class Startseite implements Initializable {
 
     public TextField player_input;
     public Button startButton;
-    public ComboBox mode;
+    public ComboBox<String> mode;
     public static String easyWord = List.EasyRandomWords();
     public static String[] actual = new String[easyWord.length()];
     public static String[] compare = new String[easyWord.length()];
