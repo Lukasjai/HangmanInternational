@@ -43,8 +43,10 @@ public class Startseite implements Initializable {
             Playwindow playerNameOutput = fxmlLoader.getController();
             playerNameOutput.showInformation(player_input.getText()); //TODO playerinput darf nicht empty sein, falls empty ->popup
             if (mode.getValue().equals("Easy")) {
-
-
+                for (int i = 0; i < easyWord.length(); i++) {
+                    actual[i] = ((easyWord.charAt(i)) + " ");
+                    compare[i] = ("_ ");
+                }
 
             } else if (mode.getValue().equals("Challenging")) {
                 playerNameOutput.underlines.setText("_ _ _ _ _ _ _ _ _ _ _ _");

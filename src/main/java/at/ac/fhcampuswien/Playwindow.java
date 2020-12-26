@@ -64,11 +64,9 @@ public class Playwindow extends Startseite implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
     }
+
+
     public void ReplaceButtons(Button button){
-        for (int i = 0; i < easyWord.length(); i++) {
-            actual[i] = ((easyWord.charAt(i)) + " ");
-            compare[i] = ("_ ");
-        }
 
         for (int i = 0; i < actual.length; i++) {
             if (actual[i].equals(button.getText() + " ")) {
