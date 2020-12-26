@@ -46,6 +46,9 @@ public class Startseite implements Initializable {
             Playwindow playerNameOutput = fxmlLoader.getController();
             playerNameOutput.showInformation(player_input.getText()); //TODO playerinput darf nicht empty sein, falls empty ->popup
             playerNameOutput.Lifecounter();
+            easyWord = List.EasyRandomWords();
+            mediumWord = List.MediumRandomWords();
+            challengingWord= List.ChallengingRandomWords();
 
             if (mode.getValue().equals("Easy")) {
                 actual=new String[easyWord.length()];

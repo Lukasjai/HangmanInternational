@@ -87,6 +87,7 @@ public class Playwindow extends Startseite implements Initializable {
         }
         if (actualWord.equals(compareWord)){
             WinWindow();
+            lifescounter=6;
         }
 
         Lifecounter();
@@ -109,6 +110,7 @@ public class Playwindow extends Startseite implements Initializable {
             case 0: hangman6.setVisible(true);
                     hangman7.setVisible(true);
                     LooseWindow();
+                    lifescounter=6;
                     break;
 
         }
