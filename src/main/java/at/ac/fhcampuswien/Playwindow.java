@@ -84,6 +84,11 @@ public class Playwindow extends Startseite implements Initializable {
         }
     }
 
+    public int  Lifecounter (int life){
+        lifes.setText(String.valueOf(life));
+        return life;
+    }
+
     public void showInformation(String playerName) {
         player_output.setText(playerName);
     }

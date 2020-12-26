@@ -75,13 +75,13 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="244.0" layoutX="598.0" layoutY="44.0" stroke="BLACK" strokeType="INSIDE" width="23.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="26.0" layoutX="576.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="26.0" layoutX="569.0" layoutY="31.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-      <Line fx:id="hangman1" endX="-43.0" endY="-9.000015258789062" layoutX="737.0" layoutY="98.0" startX="-43.5999755859375" startY="-41.00001525878906" strokeWidth="3.0" />
-      <Line fx:id="hangman3" endX="2.4000244140625" endY="63.20001220703125" layoutX="693.0" layoutY="122.0" startX="1.0" startY="0.9999847412109375" strokeWidth="3.0" />
-      <Line fx:id="hangman5" endX="20.2786865234375" endY="12.121292114257812" layoutX="673.0" layoutY="140.0" startX="-17.5999755859375" startY="-6.8000030517578125" strokeWidth="3.0" />
-      <Line fx:id="hangman4" endX="32.0" endY="-12.000015258789062" layoutX="697.0" layoutY="150.0" startX="-1.5999755859375" startY="-1.52587890625E-5" strokeWidth="3.0" />
-      <Line fx:id="hangman7" endX="-1.0999755859375" endY="-0.29998779296875" layoutX="697.0" layoutY="186.0" startX="-33.5999755859375" startY="32.0" strokeWidth="3.0" />
-      <Line fx:id="hangman6" endX="31.5999755859375" endY="32.800018310546875" layoutX="695.0" layoutY="186.0" startX="0.4000244140625" strokeWidth="3.0" />
-      <ImageView fx:id="hangman2" fitHeight="40.0" fitWidth="49.0" layoutX="669.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+      <Line fx:id="hangman1" endX="-43.0" endY="-9.000015258789062" layoutX="737.0" layoutY="98.0" startX="-43.5999755859375" startY="-41.00001525878906" strokeWidth="3.0" visible="false" />
+      <Line fx:id="hangman3" endX="2.4000244140625" endY="63.20001220703125" layoutX="693.0" layoutY="122.0" startX="1.0" startY="0.9999847412109375" strokeWidth="3.0" visible="false" />
+      <Line fx:id="hangman5" endX="20.2786865234375" endY="12.121292114257812" layoutX="673.0" layoutY="140.0" startX="-17.5999755859375" startY="-6.8000030517578125" strokeWidth="3.0" visible="false" />
+      <Line fx:id="hangman4" endX="32.0" endY="-12.000015258789062" layoutX="697.0" layoutY="150.0" startX="-1.5999755859375" startY="-1.52587890625E-5" strokeWidth="3.0" visible="false" />
+      <Line fx:id="hangman7" endX="-1.0999755859375" endY="-0.29998779296875" layoutX="697.0" layoutY="186.0" startX="-33.5999755859375" startY="32.0" strokeWidth="3.0" visible="false" />
+      <Line fx:id="hangman6" endX="31.5999755859375" endY="32.800018310546875" layoutX="695.0" layoutY="186.0" startX="0.4000244140625" strokeWidth="3.0" visible="false" />
+      <ImageView fx:id="hangman2" fitHeight="40.0" fitWidth="49.0" layoutX="669.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
             <Image url="@Troll.jpg" />
          </image>
