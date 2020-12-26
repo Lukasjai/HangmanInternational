@@ -305,7 +305,11 @@ public class Playwindow extends Startseite implements Initializable {
         ReplaceButtons(buttonZ);
         buttonZ.setVisible(false);
     }
-
-
+    public void EasterEggButton() throws Exception {
+        EasterEgg();
+    }
+    public void EasterEgg(){
+        letters.setVisible(true);
+    }
 }
 

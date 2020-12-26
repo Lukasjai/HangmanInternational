@@ -70,7 +70,7 @@
          <font>
             <Font size="24.0" />
          </font></TextField>
-      <TextField fx:id="underlines" layoutX="32.0" layoutY="309.0" prefHeight="111.0" prefWidth="755.0" style="-fx-background-color: #f7f439;">
+      <TextField fx:id="underlines" layoutX="29.0" layoutY="304.0" prefHeight="111.0" prefWidth="755.0" style="-fx-background-color: #f7f439;">
          <font>
             <Font size="50.0" />
          </font></TextField>
@@ -92,5 +92,6 @@
             <Image url="@Troll.jpg" />
          </image>
       </ImageView>
+      <Button fx:id="EasterEggButton" layoutX="670.0" layoutY="536.0" mnemonicParsing="false" onAction="#EasterEgg" prefHeight="66.0" prefWidth="133.0" style="-fx-background-color: #f7f439;" />
    </children>
 </AnchorPane>
