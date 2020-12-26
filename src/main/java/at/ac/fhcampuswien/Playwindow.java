@@ -26,8 +26,8 @@ public class Playwindow extends Startseite implements Initializable {
     public Label lifes;
 
     @FXML
-    public TextField underlines; //compare
-    public TextField letters;    //actual
+    public Label underlines; //compare
+    public Label letters;    //actual
 
 
     public Line hangman1;
