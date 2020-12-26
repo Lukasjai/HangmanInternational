@@ -114,6 +114,8 @@ public class Playwindow extends Startseite implements Initializable {
     public void LooseWindow() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/loose.fxml"));
         Parent root1 = fxmlLoader.load();
+        Loose playerNameOutput = fxmlLoader.getController();
+        playerNameOutput.showInformation(player_output.getText());
         Stage stage = new Stage();
         stage.setTitle("Hangman");
         stage.setScene(new Scene(root1));
