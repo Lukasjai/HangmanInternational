@@ -7,7 +7,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: c20000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.Loose">
     <children>
-        <TextField disable="true" editable="false" layoutX="58.0" layoutY="86.0" prefHeight="154.0" prefWidth="502.0" style="-fx-background-color: c20000 ;-fx-text-fill: white; ;" text="YOU LOST :(">
+        <TextField editable="false" layoutX="58.0" layoutY="86.0" prefHeight="154.0" prefWidth="502.0" style="-fx-background-color: c20000 ;-fx-text-fill: white; ;" text="YOU LOST :(">
             <font>
                 <Font name="Jokerman" size="64.0" />
             </font>
@@ -17,9 +17,9 @@
             <Font name="Jokerman" size="12.0" />
          </font>
       </Button>
-      <TextField fx:id="nameLost" editable="false" layoutX="198.0" layoutY="66.0" prefHeight="39.0" prefWidth="390.0" promptText="Name" style="-fx-background-color: c20000;">
+      <TextField fx:id="nameLost" editable="false" layoutX="152.0" layoutY="48.0" prefHeight="39.0" prefWidth="390.0" promptText="Anonymous " style="-fx-background-color: c20000;">
          <font>
-            <Font size="18.0" />
+            <Font size="36.0" />
          </font>
       </TextField>
     </children>

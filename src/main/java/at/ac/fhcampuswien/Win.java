@@ -11,4 +11,8 @@ public class Win{
     public void TryAgain(ActionEvent actionEvent) {
 
     }
+
+    public void showInformation(String playerName) {
+        nameWon.setText(playerName);
+    }
 }

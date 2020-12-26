@@ -85,6 +85,10 @@ public class Playwindow extends Startseite implements Initializable {
         if (mistakes==0){
             lifescounter--;
         }
+        if (actualWord.equals(compareWord)){
+            WinWindow();
+        }
+
         Lifecounter();
     }
 
@@ -110,6 +114,19 @@ public class Playwindow extends Startseite implements Initializable {
         }
         return lifescounter;
     }
+
+    public void WinWindow() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/win.fxml"));
+        Parent root1 = fxmlLoader.load();
+        Win playerNameOutput = fxmlLoader.getController();
+        playerNameOutput.showInformation(player_output.getText());
+        Stage stage = new Stage();
+        stage.setTitle("Hangman");
+        stage.setScene(new Scene(root1));
+        stage.show();
+        //App.closeWindow();
+    }
+
 
     public void LooseWindow() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/loose.fxml"));
