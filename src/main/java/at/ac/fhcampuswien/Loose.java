@@ -27,10 +27,9 @@ public class Loose {
         window.setScene(new Scene(root1));
         window.show();
         Playwindow.closeWindow();
-        Startseite.closeWindow();
+
 
     }
-
 
 
     public void showInformation(String playerName) {

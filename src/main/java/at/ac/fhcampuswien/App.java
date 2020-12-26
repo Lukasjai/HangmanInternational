@@ -10,7 +10,7 @@ import java.io.IOException;
 public class App extends Application {
     public static Stage window;
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         launch(args);
     }
 
@@ -30,12 +30,13 @@ public class App extends Application {
 
     private void closeProgram() {
         Boolean answer = ConfirmBox.display("Close Window", "Sure you want to exit?");
-        if(answer)
+        if (answer)
             window.close();
 
 
     }
-    public static void closeWindow(){
+
+    public static void closeWindow() {
         window.close();
     }
 }

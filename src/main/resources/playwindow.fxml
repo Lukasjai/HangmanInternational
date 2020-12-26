@@ -70,11 +70,11 @@
          <font>
             <Font size="24.0" />
          </font></TextField>
-      <TextField fx:id="underlines" layoutX="32.0" layoutY="309.0" prefHeight="111.0" prefWidth="755.0" promptText="_" style="-fx-background-color: #f7f439;">
+      <TextField fx:id="underlines" layoutX="32.0" layoutY="309.0" prefHeight="111.0" prefWidth="755.0" style="-fx-background-color: #f7f439;">
          <font>
             <Font size="50.0" />
          </font></TextField>
-      <TextField fx:id="letters" layoutX="161.0" layoutY="279.0" prefHeight="42.0" prefWidth="350.0" style="-fx-background-color: #f7f439;" text="T E S T">
+      <TextField fx:id="letters" disable="true" layoutX="161.0" layoutY="279.0" prefHeight="42.0" prefWidth="350.0" promptText="test" style="-fx-background-color: #f7f439;" visible="false">
          <font>
             <Font size="19.0" />
          </font></TextField>

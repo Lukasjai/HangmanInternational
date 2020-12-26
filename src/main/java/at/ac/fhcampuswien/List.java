@@ -39,7 +39,8 @@ public class List {
         MediumMode.add("restaurant");
         MediumMode.add("depression");
     }
-    public static void SelectChallengingMode(){
+
+    public static void SelectChallengingMode() {
         ChallengingMode.add("irregardless");
         ChallengingMode.add("jukebox");
         ChallengingMode.add("xylophone");
@@ -61,10 +62,11 @@ public class List {
         String wort = List.EasyMode.get(Method.r).toUpperCase();
         return wort;
     }
-    public static String ChallengingRandomWords(){
+
+    public static String ChallengingRandomWords() {
         List.SelectChallengingMode();
         Method.getRandom();
-        String wort=List.ChallengingMode.get(Method.r).toUpperCase();
+        String wort = List.ChallengingMode.get(Method.r).toUpperCase();
         return wort;
     }
 

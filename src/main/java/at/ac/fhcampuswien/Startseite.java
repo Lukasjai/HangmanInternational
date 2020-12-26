@@ -104,7 +104,7 @@ public class Startseite implements Initializable {
             window.close();
     }
 
-    public static void closeWindow(){
+    public static void closeWindow() {
         window.close();
     }
 }

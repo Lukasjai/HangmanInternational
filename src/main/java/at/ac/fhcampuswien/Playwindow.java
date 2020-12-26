@@ -145,7 +145,7 @@ public class Playwindow extends Startseite implements Initializable {
 
     }
 
-    public static void closeWindow(){
+    public static void closeWindow() {
         window.close();
     }
 

@@ -30,13 +30,13 @@ public class ConfirmBox {
             window.close();
         });
 
-        noButton.setOnAction( e -> {
+        noButton.setOnAction(e -> {
             answer = false;
             window.close();
         });
 
         VBox layout = new VBox(20);
-        layout.getChildren().addAll(label1,yesButton, noButton);
+        layout.getChildren().addAll(label1, yesButton, noButton);
         layout.setAlignment(Pos.CENTER);
 
         Scene scene = new Scene(layout);
