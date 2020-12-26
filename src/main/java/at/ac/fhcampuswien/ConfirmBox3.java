@@ -8,7 +8,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-public class ConfirmBox {
+public class ConfirmBox3 {
 
     static boolean answer;
 
@@ -17,13 +17,15 @@ public class ConfirmBox {
 
         window.initModality(Modality.APPLICATION_MODAL); //muss zuerst dieses Fenster schließen bevor ich ein anderes verwenden kann
         window.setTitle(title);
-        window.setMinWidth(300);
+        window.setMinWidth(200);
         Label label1 = new Label();
         label1.setText(message);
 
         //Two buttons
         Button yesButton = new Button("Yes");
         Button noButton = new Button("No");
+
+
 
         yesButton.setOnAction(e -> {
             answer = true;
@@ -36,7 +38,7 @@ public class ConfirmBox {
         });
 
         VBox layout = new VBox(20);
-        layout.getChildren().addAll(label1, yesButton, noButton);
+        layout.getChildren().addAll(label1, noButton, yesButton);
         layout.setAlignment(Pos.CENTER);
 
         Scene scene = new Scene(layout);
@@ -52,3 +54,4 @@ public class ConfirmBox {
 
 
 }
+
