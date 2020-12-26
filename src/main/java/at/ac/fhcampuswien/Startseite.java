@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -29,6 +30,7 @@ public class Startseite implements Initializable {
     public static int mistakes = 0;
     public static int close=0;
     public static Stage window;
+    public Label warning;
 
 
     @Override
@@ -93,7 +95,7 @@ public class Startseite implements Initializable {
                 closeProgram();
             });
         } catch (Exception e) {
-            System.out.println("Cant load Game");
+            warning.setVisible(true);
         }
 
     }

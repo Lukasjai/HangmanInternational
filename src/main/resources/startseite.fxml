@@ -42,6 +42,11 @@
                </font>
             </Button>
             <ComboBox fx:id="mode" layoutX="201.0" layoutY="198.0" prefHeight="25.0" prefWidth="172.0" promptText="Select Mode" />
+            <Label fx:id="warning" layoutX="182.0" layoutY="235.0" style="-fx-font-weight: bold;" text="Please select game mode!" textFill="RED" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
    </children>
