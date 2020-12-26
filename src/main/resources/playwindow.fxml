@@ -88,7 +88,7 @@
       </Label>
       <Label fx:id="underlines" layoutX="57.0" layoutY="313.0" prefHeight="90.0" prefWidth="730.0" text="underlines">
          <font>
-            <Font size="44.0" />
+            <Font size="40.0" />
          </font>
       </Label>
       <Label fx:id="letters" layoutX="47.0" layoutY="283.0" prefHeight="35.0" prefWidth="525.0" visible="false">

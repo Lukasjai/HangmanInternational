@@ -1,5 +1,6 @@
 package at.ac.fhcampuswien;
 
+
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
@@ -34,6 +35,7 @@ public class Startseite implements Initializable {
     public Label warning;
 
 
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         mode.getItems().addAll(
@@ -56,7 +58,6 @@ public class Startseite implements Initializable {
             easyWord = List.EasyRandomWords();
             mediumWord = List.MediumRandomWords();
             challengingWord = List.ChallengingRandomWords();
-
 
             if (mode.getValue().equals("Easy")) {
                 actual = new String[easyWord.length()];
