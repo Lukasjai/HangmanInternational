@@ -10,6 +10,7 @@ import java.io.IOException;
 public class App extends Application {
     public static Stage window;
 
+
     public static void main(String[] args) {
         launch(args);
     }
@@ -28,12 +29,24 @@ public class App extends Application {
         });
     }
 
+
+
     private void closeProgram() {
         Boolean answer = ConfirmBox.display("Close Window", "Sure you want to exit?");
         if (answer)
+            closeProgram2();
+    }
+
+    private void closeProgram2() {
+        Boolean answer = ConfirmBox2.display("Close Window", "Are you really sure?");
+        if (answer)
+            closeProgram3();
+    }
+
+    private void closeProgram3() {
+        Boolean answer = ConfirmBox3.display("Close Window", "Are you 100% sure?");
+        if (answer)
             window.close();
-
-
     }
 
     public static void closeWindow() {
