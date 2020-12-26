@@ -19,7 +19,8 @@ public class Startseite implements Initializable {
     public Button startButton;
     public ComboBox<String> mode;
     public static String easyWord = List.EasyRandomWords();
-    public static String challengingWord = List.ChallengingRandomWords();
+    public static String mediumWord = List.MediumRandomWords();
+    public static String challengingWord= List.ChallengingRandomWords();
     public static String[] actual = new String[easyWord.length()];
     public static String[] compare = new String[easyWord.length()];
     public static String actualWord;
@@ -30,8 +31,8 @@ public class Startseite implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         mode.getItems().addAll(
-                "Easy",
-                "Challenging"
+                "Easy","Medium"
+                ,"Challenging"
         );
 
     }
@@ -43,12 +44,21 @@ public class Startseite implements Initializable {
             Playwindow playerNameOutput = fxmlLoader.getController();
             playerNameOutput.showInformation(player_input.getText()); //TODO playerinput darf nicht empty sein, falls empty ->popup
             if (mode.getValue().equals("Easy")) {
+                actual=new String[easyWord.length()];
+                compare=new String[easyWord.length()];
                 for (int i = 0; i < easyWord.length(); i++) {
                     actual[i] = ((easyWord.charAt(i)) + " ");
                     compare[i] = ("_ ");
                 }
 
-            } else if (mode.getValue().equals("Challenging")) {
+            } else if (mode.getValue().equals("Medium")) {
+                actual=new String[mediumWord.length()];
+                compare=new String[mediumWord.length()];
+                for (int i = 0; i < mediumWord.length(); i++) {
+                    actual[i] = ((mediumWord.charAt(i)) + " ");
+                    compare[i] = ("_ ");
+                }
+            } else if (mode.getValue().equals("Challenging")){
                 actual=new String[challengingWord.length()];
                 compare=new String[challengingWord.length()];
                 for (int i = 0; i < challengingWord.length(); i++) {
@@ -56,6 +66,7 @@ public class Startseite implements Initializable {
                     compare[i] = ("_ ");
                 }
             }
+
             Stage stage = new Stage();
             stage.setTitle("Hangman");
             stage.setScene(new Scene(root1));
