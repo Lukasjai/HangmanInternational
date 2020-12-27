@@ -9,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -98,6 +99,7 @@ public class Startseite implements Initializable {
             window = new Stage();
             window.setTitle("Hangman");
             window.setScene(new Scene(root1));
+            window.getIcons().add(new Image("/icon2.png"));
             window.show();
             if(close==0){
                 App.closeWindow();

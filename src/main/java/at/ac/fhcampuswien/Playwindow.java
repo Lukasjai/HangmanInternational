@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
@@ -138,6 +139,7 @@ public class Playwindow extends Startseite implements Initializable {
         window = new Stage();
         window.setTitle("Hangman");
         window.setScene(new Scene(root1));
+        window.getIcons().add(new Image("/icon2.png"));
         window.show();
         Startseite.closeWindow();
         window.setOnCloseRequest(e -> {
@@ -160,6 +162,7 @@ public class Playwindow extends Startseite implements Initializable {
         window = new Stage();
         window.setTitle("Hangman");
         window.setScene(new Scene(root1));
+        window.getIcons().add(new Image("/icon2.png"));
         window.show();
         Startseite.closeWindow();
         window.setOnCloseRequest(e -> {

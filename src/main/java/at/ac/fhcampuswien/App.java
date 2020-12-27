@@ -3,6 +3,7 @@ package at.ac.fhcampuswien;
 import javafx.application.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.*;
+import javafx.scene.image.Image;
 import javafx.stage.*;
 
 import java.io.IOException;
@@ -22,6 +23,7 @@ public class App extends Application {
         window.setTitle("Hangman");
         Scene scene = new Scene(root);
         window.setScene(scene);
+        window.getIcons().add(new Image("/icon2.png"));
         window.show();
         window.setOnCloseRequest(e -> {
             e.consume(); //damit das fenster bei no nicht schließt
