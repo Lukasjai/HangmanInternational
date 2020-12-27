@@ -24,6 +24,8 @@ public class App extends Application {
         Scene scene = new Scene(root);
         window.setScene(scene);
         window.getIcons().add(new Image("/icon2.png"));
+        window.setMaxHeight(500);
+        window.setMaxWidth(500);
         window.show();
         window.setOnCloseRequest(e -> {
             e.consume(); //damit das fenster bei no nicht schließt
