@@ -28,7 +28,6 @@ public class ConfirmBox3 {
         Button noButton = new Button("No");
 
 
-
         yesButton.setOnAction(e -> {
             answer = true;
             window.close();
@@ -49,10 +48,6 @@ public class ConfirmBox3 {
 
         return answer;
     }
-
-
-
-
 
 
 }

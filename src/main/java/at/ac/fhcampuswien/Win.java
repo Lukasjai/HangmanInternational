@@ -14,7 +14,7 @@ public class Win {
     public Button tryAgainButton;
     public Label nameWon;
     public static Stage window;
-    public Label WordOutputwin;
+    public Label WordOutputWin;
 
 
     //if you click the try again button you will get back to the first window
@@ -33,12 +33,16 @@ public class Win {
     public void showInformation(String playerName) {
         nameWon.setText(playerName);
     }
+
     // Close window for win
     public static void closeWindow() {
         window.close();
     }
+
     // Method to show the right word and print it
-    public void showWordwin(String word){
-        WordOutputwin.setText(word);
+    public void showWordWin(String word) {
+        WordOutputWin.setText(word);
     }
 }
+
+

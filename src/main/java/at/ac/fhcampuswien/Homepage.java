@@ -26,10 +26,10 @@ public class Homepage implements Initializable {
     public static String[] compare;
     public static String actualWord;
     public static String compareWord;
-    public static String startunderlines="";
+    public static String startunderlines = "";
     public static int lifescounter = 6;
     public static int mistakes = 0;
-    public static int close=0;
+    public static int close = 0;
     public static Stage window;
     public Label warning;
     public static String easyWord;
@@ -45,6 +45,7 @@ public class Homepage implements Initializable {
         );
 
     }
+
     //This function starts by hitting the start button
     public void openGame() {
         try {
@@ -52,7 +53,7 @@ public class Homepage implements Initializable {
             Parent root1 = fxmlLoader.load();
             Playwindow playwindowController = fxmlLoader.getController();
             //If there is no input for the playername the name is anonymous
-            if (player_input.getText().equals("")){
+            if (player_input.getText().equals("")) {
                 player_input.setText("Anonymous");
             }
             playwindowController.showPlayerName(player_input.getText());
@@ -67,8 +68,8 @@ public class Homepage implements Initializable {
             if (mode.getValue().equals("Easy")) {
                 actual = new String[easyWord.length()];
                 compare = new String[easyWord.length()];
-                for (int i=0; i<easyWord.length();i++){
-                    startunderlines=startunderlines+"_  ";
+                for (int i = 0; i < easyWord.length(); i++) {
+                    startunderlines = startunderlines + "_  ";
                 }
                 playwindowController.underlines.setText(startunderlines);
                 for (int i = 0; i < easyWord.length(); i++) {
@@ -79,8 +80,8 @@ public class Homepage implements Initializable {
             } else if (mode.getValue().equals("Medium")) {
                 actual = new String[mediumWord.length()];
                 compare = new String[mediumWord.length()];
-                for (int i=0; i<mediumWord.length();i++){
-                    startunderlines=startunderlines+"_  ";
+                for (int i = 0; i < mediumWord.length(); i++) {
+                    startunderlines = startunderlines + "_  ";
                 }
                 playwindowController.underlines.setText(startunderlines);
                 for (int i = 0; i < mediumWord.length(); i++) {
@@ -90,8 +91,8 @@ public class Homepage implements Initializable {
             } else if (mode.getValue().equals("Challenging")) {
                 actual = new String[challengingWord.length()];
                 compare = new String[challengingWord.length()];
-                for (int i=0; i<challengingWord.length();i++){
-                    startunderlines=startunderlines+"_  ";
+                for (int i = 0; i < challengingWord.length(); i++) {
+                    startunderlines = startunderlines + "_  ";
                 }
                 playwindowController.underlines.setText(startunderlines);
                 for (int i = 0; i < challengingWord.length(); i++) {
@@ -106,14 +107,13 @@ public class Homepage implements Initializable {
             window.setScene(new Scene(root1));
             window.getIcons().add(new Image("/icon2.png"));
             window.show();
-            //
-            if(close==0){
+            //if loop to decide, which window to open: if game was won,
+            // then it opens win window, if you lost, then lose window
+            if (close == 0) {
                 App.closeWindow();
-            }
-            else if (close==10){
+            } else if (close == 10) {
                 Win.closeWindow();
-            }
-            else {
+            } else {
                 Loose.closeWindow();
             }
             window.setOnCloseRequest(e -> {
@@ -157,18 +157,21 @@ public class Homepage implements Initializable {
         if (answer)
             closeProgram2();
     }
+
     //are you 100% sure third window popup
     private void closeProgram2() {
         Boolean answer = ConfirmBox2.display("Close Window", "Are you really sure?");
         if (answer)
             closeProgram3();
     }
+
     // to close a window :)
     private void closeProgram3() {
         Boolean answer = ConfirmBox3.display("Close Window", "Are you 100% sure?");
         if (answer)
             window.close();
     }
+
     // to close a window :)
     public static void closeWindow() {
         window.close();

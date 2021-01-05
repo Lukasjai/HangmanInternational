@@ -22,7 +22,7 @@
             <Font size="30.0" />
          </font>
       </Label>
-      <Label fx:id="WordOutputwin" layoutX="195.0" layoutY="253.0" prefHeight="31.0" prefWidth="398.0" text="YourWordwin" textFill="WHITE">
+      <Label fx:id="WordOutputWin" layoutX="195.0" layoutY="253.0" prefHeight="31.0" prefWidth="398.0" text="YourWordwin" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>

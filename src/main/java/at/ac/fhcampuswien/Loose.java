@@ -41,11 +41,9 @@ public class Loose {
     }
 
     // Method to show the right word and print it
-    public void showWord(String word){
+    public void showWord(String word) {
         WordOutput.setText(word);
     }
-
-
 
 
 }

@@ -137,7 +137,7 @@ public class Playwindow extends Homepage implements Initializable {
         Parent root1 = fxmlLoader.load();
         Win playerNameOutput = fxmlLoader.getController();
         playerNameOutput.showInformation(player_output.getText());
-        playerNameOutput.showWordwin(actualWord);
+        playerNameOutput.showWordWin(actualWord);
         window = new Stage();
         window.setTitle("Hangman");
         window.setScene(new Scene(root1));
@@ -308,7 +308,7 @@ public class Playwindow extends Homepage implements Initializable {
     }
 
     // a very nice button try to find it :)
-    public void easterEggButton(){
+    public void easterEggButton() {
         easterEgg();
     }
 
