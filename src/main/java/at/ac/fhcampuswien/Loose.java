@@ -1,27 +1,25 @@
 package at.ac.fhcampuswien;
 
-import at.ac.fhcampuswien.Playwindow;
-import at.ac.fhcampuswien.Startseite;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 
 public class Loose {
+    //create variables
     public Button tryAgainButton;
     public Label nameLost;
     public static Stage window;
     public Label WordOutput;
     public Label WordWas;
 
-    public void TryAgain() throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/startseite.fxml"));
+    //if you click the try again button you will get back to the first window
+    public void tryAgain() throws Exception {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/homepage.fxml"));
         Parent root1 = fxmlLoader.load();
         window = new Stage();
         window.setTitle("Hangman");
@@ -30,36 +28,23 @@ public class Loose {
         window.show();
         Playwindow.closeWindow();
 
-
-    }
-    private void closeProgram() {
-        Boolean answer = ConfirmBox.display("Close Window", "Sure you want to exit?");
-        if (answer)
-            closeProgram2();
     }
 
-    private void closeProgram2() {
-        Boolean answer = ConfirmBox2.display("Close Window", "Are you really sure?");
-        if (answer)
-            closeProgram3();
-    }
-
-    private void closeProgram3() {
-        Boolean answer = ConfirmBox3.display("Close Window", "Are you 100% sure?");
-        if (answer)
-            window.close();
-    }
-
-
+    // get the name of the Player and print it
     public void showInformation(String playerName) {
         nameLost.setText(playerName);
     }
+
+    // Close window for loose
     public static void closeWindow() {
         window.close();
     }
+
+    // Method to show the right word and print it
     public void showWord(String word){
         WordOutput.setText(word);
     }
+
 
 
 

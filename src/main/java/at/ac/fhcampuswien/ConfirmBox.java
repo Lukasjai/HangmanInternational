@@ -12,10 +12,11 @@ public class ConfirmBox {
 
     static boolean answer;
 
+    //defines the popup window for exit the game
     public static boolean display(String title, String message) {
         Stage window = new Stage();
 
-        window.initModality(Modality.APPLICATION_MODAL); //muss zuerst dieses Fenster schließen bevor ich ein anderes verwenden kann
+        window.initModality(Modality.APPLICATION_MODAL); //must close this window first before opening another
         window.setTitle(title);
         window.setMinWidth(250);
         window.setMinHeight(250);
@@ -42,7 +43,7 @@ public class ConfirmBox {
 
         Scene scene = new Scene(layout);
         window.setScene(scene);
-        window.showAndWait(); //bevor wir zum Main Fenster zurück gehen muss Alert Fenster geschlossen werden
+        window.showAndWait(); //before we go back to the main window alert has to be closed
 
         return answer;
     }
