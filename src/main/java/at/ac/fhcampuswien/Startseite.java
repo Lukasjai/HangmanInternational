@@ -12,6 +12,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
+import java.io.FileNotFoundException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -21,9 +22,36 @@ public class Startseite implements Initializable {
     public TextField player_input;
     public Button startButton;
     public ComboBox<String> mode;
-    public static String easyWord = List.EasyRandomWords();
-    public static String mediumWord = List.MediumRandomWords();
-    public static String challengingWord = List.ChallengingRandomWords();
+    public static String easyWord;
+
+    static {
+        try {
+            easyWord = List.EasyRandomWords();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static String mediumWord;
+
+    static {
+        try {
+            mediumWord = List.MediumRandomWords();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static String challengingWord;
+
+    static {
+        try {
+            challengingWord = List.ChallengingRandomWords();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static String[] actual = new String[easyWord.length()];
     public static String[] compare = new String[easyWord.length()];
     public static String actualWord;
