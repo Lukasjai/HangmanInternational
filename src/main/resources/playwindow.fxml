@@ -12,7 +12,7 @@
 
 <AnchorPane fx:id="background" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f7f439;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.Playwindow">
    <children>
-      <Label layoutX="187.0" layoutY="21.0" prefHeight="102.0" prefWidth="334.0" text="Hangman">
+      <Label layoutX="47.0" layoutY="31.0" prefHeight="102.0" prefWidth="334.0" text="Hangman">
          <font>
             <Font name="Jokerman" size="64.0" />
          </font>
