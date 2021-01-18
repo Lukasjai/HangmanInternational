@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="background" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f7f439;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.Playwindow">
+<AnchorPane fx:id="background" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #eeee00;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.Playwindow">
    <children>
       <Label layoutX="47.0" layoutY="31.0" prefHeight="102.0" prefWidth="334.0" text="Hangman">
          <font>
@@ -75,7 +75,7 @@
             <Image url="@Troll.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="easterEggButton" layoutX="670.0" layoutY="536.0" mnemonicParsing="false" onAction="#easterEgg" prefHeight="66.0" prefWidth="133.0" style="-fx-background-color: #f7f439;" />
+      <Button fx:id="easterEggButton" layoutX="664.0" layoutY="533.0" mnemonicParsing="false" onAction="#easterEgg" prefHeight="66.0" prefWidth="133.0" style="-fx-background-color: #eeee00;" />
       <Label fx:id="lifes" layoutX="249.0" layoutY="221.0" prefHeight="18.0" prefWidth="57.0" text="Lives">
          <font>
             <Font size="24.0" />

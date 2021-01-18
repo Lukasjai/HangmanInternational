@@ -18,7 +18,7 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #f7f439;">
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #f7f439 #eeee00;">
          <children>
             <Label layoutX="96.0" layoutY="45.0" prefHeight="60.0" prefWidth="400.0" text="Hangman">
                <font>
