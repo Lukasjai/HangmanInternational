@@ -29,6 +29,7 @@ public class App extends Application {
         window.getIcons().add(new Image("/icon2.png"));
         window.setMaxHeight(500);
         window.setMaxWidth(500);
+        window.setResizable(false);
         window.show();
         window.setOnCloseRequest(e -> {
             e.consume(); //damit das fenster bei no nicht schließt

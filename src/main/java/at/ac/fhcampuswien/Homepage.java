@@ -106,6 +106,7 @@ public class Homepage implements Initializable {
             window.setTitle("Hangman");
             window.setScene(new Scene(root1));
             window.getIcons().add(new Image("/icon2.png"));
+            window.setResizable(false);
             window.show();
             //if loop to decide, which window to open: if game was won,
             // then it opens win window, if you lost, then lose window

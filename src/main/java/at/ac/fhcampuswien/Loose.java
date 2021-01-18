@@ -25,6 +25,7 @@ public class Loose {
         window.setTitle("Hangman");
         window.setScene(new Scene(root1));
         window.getIcons().add(new Image("/icon2.png"));
+        window.setResizable(false);
         window.show();
         Playwindow.closeWindow();
 
