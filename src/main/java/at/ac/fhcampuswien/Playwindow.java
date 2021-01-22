@@ -158,7 +158,7 @@ public class Playwindow extends Homepage implements Initializable {
                 hangman7.setVisible(true);
                 ft7.play();
 
-                //Made by Mr.Strommer to solve the Problem
+                //Made by Mr.Prof.Dr.Strommer to solve the Problem
                 ft6.setOnFinished(new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
