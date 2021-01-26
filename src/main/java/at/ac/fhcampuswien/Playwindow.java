@@ -94,7 +94,7 @@ public class Playwindow extends Homepage implements Initializable {
             lifescounter--;
         }
         if (actualWord.equals(compareWord)) {
-            TimeUnit.SECONDS.sleep(2);
+            //TimeUnit.SECONDS.sleep(2);
             winWindow();
             lifescounter = 6;
             close = 10;
